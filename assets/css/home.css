@@ -1,33 +1,5 @@
 
 
-/*--------------------------------------------------------------
-# Home- About Section Starts
---------------------------------------------------------------*/
-
-.home-about .about-image-stack {
-    position: relative;
-  width: 100%;
-  }
-  
-  .home-about .about-image-stack-bottom {
-    position: absolute;
-    left: -88px;
-    top: -88px;
-    z-index: -1;
-  }
-/*   
-  .home-about .about-image-stack-top { 
-    width: 100%; 
-  } */
-  .home-about .about-image-stack-top img{
-      width: 100%;
-      border-bottom-left-radius: 192.5px;
-  }
-  
-  .home-about .about-image-stack-bottom img {
-    width: 100%;
-    display: block;
-  }
 
 
   /*--------------------------------------------------------------

@@ -15,16 +15,7 @@
 .about-section .about-image-top1 {
     margin-top: 70px;
 }
-.our-vision .vision-img img{
-    border-bottom-right-radius: 192.5px;
-}
 
-.our-vision .vision-bg-img {
-    position: absolute;
-    right: -70px;
-    z-index: -1;
-    top: -78px;
-  }
 
     /*--------------------------------------------------------------
 # Team Section Starts
