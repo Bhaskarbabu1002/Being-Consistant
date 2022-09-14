@@ -1,0 +1,110 @@
+
+
+/*--------------------------------------------------------------
+# Home- About Section Starts
+--------------------------------------------------------------*/
+
+.home-about .about-image-stack {
+    position: relative;
+  width: 100%;
+  }
+  
+  .home-about .about-image-stack-bottom {
+    position: absolute;
+    left: -88px;
+    top: -88px;
+    z-index: -1;
+  }
+/*   
+  .home-about .about-image-stack-top { 
+    width: 100%; 
+  } */
+  .home-about .about-image-stack-top img{
+      width: 100%;
+      border-bottom-left-radius: 192.5px;
+  }
+  
+  .home-about .about-image-stack-bottom img {
+    width: 100%;
+    display: block;
+  }
+
+
+  /*--------------------------------------------------------------
+# Home- Classes Section Starts
+--------------------------------------------------------------*/
+
+.home-classes .classes-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-classes .classes-card .personal-training-card{
+  background: #F8F8F8;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.home-classes .classes-card .classes-card-bgimg {
+  position: absolute;
+  right: -63px;
+  z-index: -1;
+  top: -75px;
+}
+.home-classes .class-card-heading {
+  font-family: 'Poppins';
+}
+
+  /*--------------------------------------------------------------
+# Price Section Starts
+--------------------------------------------------------------*/
+
+.price-section .pricing-card {
+  background: #F8F8F8;
+  border-radius: 20px;
+  padding: 42px 35px 45px 35px;
+  border: unset;
+}
+.price-section .pricing-card .pricing_img {
+  position: absolute;
+    left: 0;
+    width: 260px;
+    z-index: 1;
+    top: 0;
+}
+.price-section .card-content {
+  z-index: 1;
+}
+.price-section .card-content .card-title h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  color: #454545;
+}
+.price-section .card-content .pricing-display {
+  display: flex;
+  gap: 20px;
+}
+.price-section .card-content .pricing-display .pricing-number{
+  font-family: 'Poppins';
+font-size: 80px;
+color: #7A5C8D;
+}
+.price-section .pricing-display .pricing-per-month {
+align-self: flex-end;
+}
+.price-section .pricing-display .pricing-symbol {
+font-size: 18px;
+margin-top: 1.5rem;
+}
+.price-section .card-content hr{
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #008878;
+}
+
+  /*--------------------------------------------------------------
+# Testimonial Section Starts
+--------------------------------------------------------------*/
