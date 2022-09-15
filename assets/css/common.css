@@ -145,10 +145,10 @@ body {
   padding-top: 120px;
 }
 
-/* .container {
+.container {
   max-width: 1250px;
   margin: 0 auto;
-} */
+}
 
 p {
   font-size: 16px;
@@ -459,8 +459,8 @@ footer {
   /* transform: rotate(-180deg); */
   z-index: -1;
   top: 50%;
-  margin-left: -73px;
-  min-width: 1264px;
+  margin-left: -65px;
+    min-width: 1350px;
 }
 .home-blogs-section .blogs-main-btn {
 display: flex;
@@ -528,8 +528,8 @@ background: #F2F2F2;
 border-top-right-radius: 90px;
 border-top-left-radius: 90px;
 z-index: -1;
-margin-left: -77px;
-min-width: 1264px;
+margin-left: -65px;
+    min-width: 1350px;
 }  
 .testimonials-section .client-profile {
   background-color: #F8F8F8;
@@ -552,7 +552,7 @@ font-size: 14px;
 .testimonials-section .client-profile .client-wave-img {
   position: absolute;
   z-index: 1;
-  left: 44px;
+  left: 61px;
   top: 41px;
   width: 243px;
   height: 243px;
@@ -561,7 +561,7 @@ font-size: 14px;
  .swiper-arrows {
   position: relative;
   bottom: 250px;
-  margin: 0px -72px;
+  margin: 0px -61px;
 }
 .swiper-button-prev img,.swiper-button-next img{
 width: 52px;
@@ -612,7 +612,6 @@ height: 52px;
   
   .faq-section .mb-0 > a:after {
     content: url(../images/Icons/Plus_Icon.png);
-    font-family: "Font Awesome 5 Free";
     position: absolute;
     right: 0;
     font-weight: 600;
@@ -620,7 +619,6 @@ height: 52px;
   
   .faq-section .mb-0 > a[aria-expanded="true"]:after {
     content: url(../images/Icons/Minus_Icon.png);
-    font-family: "Font Awesome 5 Free";
     font-weight: 600;
   }
   .collapse-card {
@@ -635,14 +633,45 @@ height: 52px;
     border-top: 1px solid #000;
   }
 
-  
+
 .our-vision .vision-img img{
     border-bottom-right-radius: 192.5px;
 }
 
 .our-vision .vision-bg-img {
-    position: absolute;
-    right: -70px;
-    z-index: -1;
-    top: -78px;
+  position: absolute;
+  right: -36px;
+  z-index: -1;
+  top: -81px;
+  }
+
+/* .space-col-left {
+  padding-right: 50px;
+}
+  .space-col-right {
+    padding-left: 50px;
+  } */
+  .grid-row {
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+
+  .grid-col {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .blogs-grid-col {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .date-time {
+    font-size: 14px;
+    color: #7A5C8D;
+    
+  }
+  .blogs-read-btn .read-more-btn {
+    font-size: 14px;
+    color: #7A5C8D;
+    font-weight: 700;
+    text-decoration: underline;
   }

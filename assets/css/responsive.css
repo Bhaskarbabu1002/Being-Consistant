@@ -6,6 +6,20 @@
     section {
         margin: 100px 0 100px 0;
     }
+
+    .grid-row {
+        margin-left: 0rem;
+        margin-right: 0rem;
+      }
+    
+      .grid-col {
+        padding-left: 0.938rem;
+        padding-right: 0.938rem;
+      }
+      .blogs-grid-col {
+        padding-left: 0.938rem;
+        padding-right: 0.938rem;
+      }
     /*--------------------------------------------------------------
     # Header Starts 
     --------------------------------------------------------------*/
@@ -45,7 +59,7 @@
             margin-top: 26px;
         }
         .hero .image-stack__item-top img {
-            width: 330px;
+            width: 285px;
         }
 
          .about-image-stack-bottom {
@@ -69,6 +83,11 @@
 
         .price-section .pricing-card {
             margin: 15px 0px;
+        }
+        .price-section .card-content .pricing-display .pricing-number {
+            font-family: 'Poppins';
+            font-size: 50px;
+            color: #7A5C8D;
         }
      /*--------------------------------------------------------------
     # Home Blogs Section
@@ -110,9 +129,16 @@
         .swiper-arrows {
             position: relative;
             bottom: 250px;
-            margin: 0px -17px;
+            margin: 0px -7px;
         }
-
+        .testimonials-section .client-profile .client-wave-img {
+            position: absolute;
+            z-index: 1;
+            left: 45px;
+            top: 41px;
+            width: 243px;
+            height: 243px;
+        }
 
         /* ====================================== About-us-page ====================================== */
 

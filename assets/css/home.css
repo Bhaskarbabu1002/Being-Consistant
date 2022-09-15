@@ -9,7 +9,7 @@
 .home-classes .classes-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 27px;
 }
 .home-classes .classes-card .personal-training-card{
   background: #F8F8F8;
