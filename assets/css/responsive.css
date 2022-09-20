@@ -300,6 +300,10 @@
             gap: 10px;
             margin-left: 0px;
         }
+        .about-image-stack-top img {
+            width: 100%;
+            border-bottom-left-radius: 90.5px;
+        }
         .about-section .about-image-bottom  {
             text-align: center;
         }
