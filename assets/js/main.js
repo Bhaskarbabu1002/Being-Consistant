@@ -41,7 +41,6 @@ $(document).ready(function () {
         // "slide", "fade", "cube", "coverflow" or "flip"
         effect: 'slide',
         // Distance between slides in px.
-        spaceBetween: 90,
         //
         slidesPerView: 3,
         //
@@ -70,7 +69,65 @@ $(document).ready(function () {
         }
     })
 
- // // Swiper Testimonial 
+        // Swiper Team carousel
+       var mySwiper = new Swiper('.swiper-team-container', {
+        speed: 400,
+        spaceBetween: 100,
+        initialSlide: 0,
+        // slidesToShow: 3,
+        // infinite:true,
+        //truewrapper adoptsheight of active slide
+        autoHeight: false,
+        // Optional parameters
+        direction: 'horizontal',
+        
+        loop: true,
+        // delay between transitions in ms
+        // autoplay: 5000,
+        autoplayStopOnLast: false, // loop false also
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-team-button-next',
+            prevEl: '.swiper-team-button-prev',
+
+        },
+        // And if we need scrollbar
+        //scrollbar: '.swiper-scrollbar',
+        // "slide", "fade", "cube", "coverflow" or "flip"
+        effect: 'slide',
+        // Distance between slides in px.
+        //
+        slidesPerView: 3,
+        //
+        centeredSlides: true,
+        //
+        slidesOffsetBefore: 0,
+        //
+        grabCursor: true,
+        breakpoints: {
+            // when window width is <= 320px
+            320: {
+                slidesPerView: 1.3,
+                spaceBetween: 20,
+            },
+            // when window width is <= 480px
+            480: {
+                slidesPerView: 1.3,
+                spaceBetween: 20,
+            },
+            // when window width is <= 640px
+            767: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 3,
+         
+            }
+        }
+    })
+
+ // // Swiper blogs carousel 
  var mySwiper = new Swiper('.swiper-blogs-container', {
   speed: 400,
   spaceBetween: 100,
@@ -102,11 +159,11 @@ $(document).ready(function () {
   slidesOffsetBefore: 0,
   // //
   // noSwiping: true,
-  grabCursor: true,
+//   grabCursor: true,
   breakpoints: {
       // when window width is <= 320px
       320: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.3,
         noSwiping: false,
         allowSlidePrev: true,
          allowSlideNext: true,
@@ -114,7 +171,7 @@ $(document).ready(function () {
     },
     // when window width is <= 480px
     480: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.3,
         noSwiping: false,
         allowSlidePrev: true,
          allowSlideNext: true,

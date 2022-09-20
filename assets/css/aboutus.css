@@ -47,8 +47,14 @@
   }
   .team-swiper-arrows {
     position: relative;
-    bottom: 145px;
-    margin: 0px -72px;
+    bottom: 150px;
+    margin: 0px -63px;
   }
 
-  
+  /*--------------------------------------------------------------
+# Our-Vision Section Starts
+--------------------------------------------------------------*/
+
+.our-vision .vision-img img{
+  width: 100%;
+}
