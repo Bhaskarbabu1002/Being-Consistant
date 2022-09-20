@@ -170,6 +170,9 @@
         .home-classes .classes-text {
             margin-top: 38px;
         }
+        .home-classes .classes-card-top {
+            margin-left: 0px;
+        }
     /*--------------------------------------------------------------
     # Pricing Section
     --------------------------------------------------------------*/
