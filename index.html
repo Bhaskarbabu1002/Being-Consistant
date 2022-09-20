@@ -25,9 +25,11 @@
             <img src="./assets/images/logo/Main-Logo.png" class="img img-fluid" alt=""/>
           </a>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span> </span>
-            <span> </span>
-            <span> </span>
+           <div class="">
+            <span class="navbar_toggle1"> </span>
+            <span class="navbar_toggle2"> </span>
+            <span class="navbar_toggle3"> </span>
+          </div>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto text-center">
@@ -52,11 +54,11 @@
                 </a>
               </li>
               <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a href="#" class="nav-link">
+                <a href="contact.html" class="nav-link">
                 Contact
                 </a>
               </li>
-              <li class="nav-item mt-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <li class="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a href="#" class="main-button">
                 Register
                 </a>
@@ -71,15 +73,18 @@
  <div class="hero section-wrapper">
     <div class="container">
       <div class="row grid-row">
-        <div class="col-md-6 grid-col">
+        <div class="col-md-6 grid-col order-2 order-md-1">
          <div class="hero-text">
           <p class="heading">Lorem Ipsum</p>
           <h1>Helping you to take fitness to the top level</h1>
           <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, accumsan, est, maecenas varius quisque libero ultricies. Ultrices dolor, urna semper lectus risus.</p>
-          <a href="#" class="main-button">Reach Out</a>
+          <div class="hero-btn">
+            <a href="#" class="main-button">Reach Out</a>
+          </div>
+         
         </div>
         </div>
-        <div class="col-md-6 grid-col">
+        <div class="col-md-6 grid-col order-1 order-md-2">
             <div class="image-stack">
                 <div class="image-stack__item image-stack__item-top">
                   <img src="./assets/images/Yoga-Girl.png" alt="">
@@ -133,7 +138,7 @@
  <section class="home-classes">
   <div class="container">
     <div class="row grid-row">
-      <div class="col-md-6 grid-col">
+      <div class="col-md-6 grid-col order-2 order-md-1 align-self-center">
        <div class="classes-text">
         <p class="heading">Lorem</p>
         <h2>Classes</h2>
@@ -141,10 +146,10 @@
         <a href="#" class="main-button">Know More</a>
       </div>
       </div>
-      <div class="col-md-6 grid-col">
+      <div class="col-md-6 grid-col order-1 order-md-2 ">
         <div class="row">
           <div class="col-md-6">
-            <div class="classes-card">
+            <div class="classes-card classes-card-top">
              <div class="personal-training-card">
               <img src="assets/images/Icons/Personal_Training_Icon.png" class="img img-fluid" alt="">
               <div class="personal-training-text">
@@ -152,7 +157,7 @@
               <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. </p>
             </div> 
             </div>
-            <div class="personal-training-card">
+            <div class="personal-training-card personal-card-two">
               <img src="assets/images/Icons/Consistent_Icon.png" class="img img-fluid" alt="">
               <div class="personal-training-text">
               <p class="font-weight-bold class-card-heading my-2">21 Consistent</p>
@@ -280,14 +285,13 @@
     </div>
  
   <!-- Slider main container -->
-  <div class="swiper-container mt-5">
+  <div class="swiper-container swiper-testimonial-container mt-5">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">
+      <div class="swiper-slide testimonial-slide">
         <div class="client-profile">
-          <img src="assets/images/Waves_Small.png" class="client-wave-img"  alt="">
-          <img src="assets/images/Testimonials_Img.png" class="client_img img img-fluid card-img-top rounded-circle" alt="client-image">
+          <img src="assets/images/testimonials_Image.png"  class="img img-fluid" alt="" >
           <div class="testimonial-content">
           <h3 class="client_name">Jane Doe</h3>
           <p class="font-weight-bold">Location</p>
@@ -296,10 +300,9 @@
         </div>
         </div>
       </div>
-      <div class="swiper-slide blue ">
+      <div class="swiper-slide testimonial-slide">
         <div class="client-profile">
-          <img src="assets/images/Waves_Small.png" class="client-wave-img"  alt="">
-          <img src="assets/images/Testimonials_Img.png" class="client_img img img-fluid card-img-top rounded-circle" alt="client-image">
+          <img src="assets/images/testimonials_Image.png"  class="img img-fluid" alt="" >
           <div class="testimonial-content">
           <h3 class="client_name">Jane Doe</h3>
           <p class="font-weight-bold">Location</p>
@@ -308,10 +311,9 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide red">
+      <div class="swiper-slide testimonial-slide">
         <div class="client-profile">
-          <img src="assets/images/Waves_Small.png" class="client-wave-img"  alt="">
-          <img src="assets/images/Testimonials_Img.png" class="client_img img img-fluid card-img-top rounded-circle" alt="client-image">
+          <img src="assets/images/testimonials_Image.png"  class="img img-fluid" alt="" >
           <div class="testimonial-content">
           <h3 class="client_name">Jane Doe</h3>
           <p class="font-weight-bold">Location</p>
@@ -340,36 +342,63 @@
 <!-- End Testimonials Section -->
 
 <!-- ======= Blogs Section Starts ======= -->
-  <section class="home-blogs-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <p class="heading">Lorem</p>
-        <h2>Blogs</h2>
-      </div>
-      <div class="row grid-row">
-        <div class="col-md-4 blogs-grid-col">
-          <div class="card blogs-card">
-            <div class="blogs_img">
-              <img src="assets/images/Blog_1.png" class="img img-fluid" alt="image">
+
+<section class="home-blogs-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="heading">Lorem</p>
+      <h2>Blogs</h2>
+    </div>
+    <div class="swiper-container swiper-blogs-container mt-5">
+     <!-- Additional required wrapper -->
+     <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+    
+        <div class="card blogs-card">
+          <div class="blogs_img">
+            <img src="assets/images/Blog_1.png" class="img img-fluid" alt="image">
+          </div>
+          <div class="card-content">
+            <div class="card-title ">
+              <h3>Family & Interpersonal Issues</h3>
+              <span>22 May 2022, 1 min read</span>
             </div>
-            <div class="card-content">
-              <div class="card-title ">
-                <h3>Family & Interpersonal Issues</h3>
-                <span>22 May 2022, 1 min read</span>
-              </div>
-              <div class="card-description my-3">
-              <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. </p>
-              </div>
-              <div class="blogs-btn">
-                <a href="#" class="read-more-btn">Read more</a>
-              </div>
+            <div class="card-description my-3">
+            <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. </p>
+            </div>
+            <div class="blogs-btn">
+              <a href="#" class="read-more-btn">Read more</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 blogs-grid-col">
+
+      </div>
+      <div class="swiper-slide">
+      
+        <div class="card blogs-card">
+          <div class="blogs_img">
+            <img src="assets/images/Nature.jpg" class="img img-fluid" alt="image">
+          </div>
+          <div class="card-content">
+            <div class="card-title ">
+              <h3>Family & Interpersonal Issues</h3>
+              <span>22 May 2022, 1 min read</span>
+            </div>
+            <div class="card-description my-3">
+            <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. </p>
+            </div>
+            <div class="blogs-btn">
+              <a href="#" class="read-more-btn">Read more</a>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+      <div class="swiper-slide">
           <div class="card blogs-card">
             <div class="blogs_img">
-              <img src="assets/images/Nature.jpg" class="img img-fluid" alt="image">
+              <img src="assets/images/Blog_3.png" class="img img-fluid" alt="image">
             </div>
             <div class="card-content">
               <div class="card-title ">
@@ -384,35 +413,18 @@
               </div>
             </div>
           </div>
-          </div>
-          <div class="col-md-4 blogs-grid-col">
-            <div class="card blogs-card">
-              <div class="blogs_img">
-                <img src="assets/images/Blog_3.png" class="img img-fluid" alt="image">
-              </div>
-              <div class="card-content">
-                <div class="card-title ">
-                  <h3>Family & Interpersonal Issues</h3>
-                  <span>22 May 2022, 1 min read</span>
-                </div>
-                <div class="card-description my-3">
-                <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. </p>
-                </div>
-                <div class="blogs-btn">
-                  <a href="#" class="read-more-btn">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="blogs_bg">
-       
-      </div>
-      <div class="blogs-main-btn">
-        <a href="#" class="main-button">View All</a>
       </div>
     </div>
-  </section>
+    </div>
+    <div class="blogs_bg">
+    </div>
+    <div class="blogs-main-btn">
+      <a href="#" class="main-button">View All</a>
+    </div>
+  </div>
+</section>
+
+ 
     <!-- ======= Application Section Starts ======= -->
     <section class="application-section">
       <div class="container">
@@ -421,17 +433,17 @@
             <img src="assets/images/Application-wave-img.png" class="img img-fluid" alt="image">
           </div>
         <div class="row grid-row">
-          <div class="col-md-8 grid-col">
+          <div class="col-md-8 grid-col order-2 order-md-1">
             <div class="application-card-text">
               <p class="heading">Lorem Ipsum</p>
               <h2>Tryout for free fitness consultation!</h2>
               <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. Senectus nulla consectetur magna euismod. Nam sit sed id elementum orci in. Sit leo, viverra potenti at ultrices penatibus amet egestas nulla. Lacus adipiscing fermentum feugiat hendrerit id nisl molestie.</p>
             </div>
-            <div class="apply-btn my-4">
+            <div class="apply-btn">
               <a href="#" class="main-button">Apply Now</a>
             </div>
           </div>
-          <div class="col-md-4 grid-col">
+          <div class="col-md-4 grid-col order-1 order-md-2">
             <div class="aplication-img">
               <img src="assets/images/apply_img.png" class="img img-fluid" alt="">
             </div>
@@ -441,8 +453,6 @@
           </div>
    </section>
   
-
-
   <!-- footer Starts -->
   <footer>
     <div class="container">
@@ -466,11 +476,11 @@
     </div>
     <div class="footer_menu">
         <ul class="footer_lists d-flex">
-            <li class="footer_nav_links">Home</li>
-            <li class="footer_nav_links">About</li>
-            <li class="footer_nav_links">Classes</li>
-            <li class="footer_nav_links">Blogs</li>
-            <li class="footer_nav_links">Contact</li>
+       <a href="index.html" class="footer_nav_links"><li >Home</li></a>
+       <a href="about_us.html" class="footer_nav_links"><li>About</li></a> 
+       <a href="class-page.html" class="footer_nav_links"><li>Classes</li></a>
+       <a href="blogs.html" class="footer_nav_links"><li>Blogs</li></a>
+       <a href="contact.html" class="footer_nav_links"><li>Contact</li></a>
         </ul>
     </div>
     </div>

@@ -1,4 +1,4 @@
-
+history.scrollRestoration = "manual";
 // Header Scroll
 window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
@@ -13,22 +13,22 @@ $(document).ready(function () {
       });
   });
 
-    // Swiper Testimonial 
-    var mySwiper = new Swiper('.swiper-container', {
+    // // Swiper Testimonial 
+    var mySwiper = new Swiper('.swiper-testimonial-container', {
         speed: 400,
         spaceBetween: 100,
         initialSlide: 0,
+        // slidesToShow: 3,
+        // infinite:true,
         //truewrapper adoptsheight of active slide
         autoHeight: false,
         // Optional parameters
         direction: 'horizontal',
+        
         loop: true,
         // delay between transitions in ms
         // autoplay: 5000,
         autoplayStopOnLast: false, // loop false also
-        // If we need pagination
-        pagination: '.swiper-pagination',
-        paginationType: "bullets",
 
         // Navigation arrows
         navigation: {
@@ -36,13 +36,12 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
 
         },
-
         // And if we need scrollbar
         //scrollbar: '.swiper-scrollbar',
         // "slide", "fade", "cube", "coverflow" or "flip"
         effect: 'slide',
         // Distance between slides in px.
-        spaceBetween: 60,
+        spaceBetween: 90,
         //
         slidesPerView: 3,
         //
@@ -65,7 +64,75 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             1200: {
-                slidesPerView: 3
+                slidesPerView: 3,
+         
             }
         }
     })
+
+ // // Swiper Testimonial 
+ var mySwiper = new Swiper('.swiper-blogs-container', {
+  speed: 400,
+  spaceBetween: 100,
+  effect: 'slide',
+  slidesPerView: 3,
+  loop: true,
+  noSwiping: false,
+  allowSlidePrev: false,
+  allowSlideNext: false,
+  autoplay: false,
+  keyboard: false,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+
+  },
+
+  // // And if we need scrollbar
+  // //scrollbar: '.swiper-scrollbar',
+  // // "slide", "fade", "cube", "coverflow" or "flip"
+  // effect: 'slide',
+  // // Distance between slides in px.
+  // spaceBetween: 90,
+  // //
+  // slidesPerView: 3,
+  // //
+  centeredSlides: true,
+  // //
+  slidesOffsetBefore: 0,
+  // //
+  // noSwiping: true,
+  grabCursor: true,
+  breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1.5,
+        noSwiping: false,
+        allowSlidePrev: true,
+         allowSlideNext: true,
+         spaceBetween: 20,
+    },
+    // when window width is <= 480px
+    480: {
+        slidesPerView: 1.5,
+        noSwiping: false,
+        allowSlidePrev: true,
+         allowSlideNext: true,
+         spaceBetween: 20,
+    },
+      // when window width is <=  767px
+      767: {
+          slidesPerView: 2,
+          noSwiping: false,
+         allowSlidePrev: true,
+          allowSlideNext: true
+      },
+      991: {
+          slidesPerView: 3,
+          // navigation: false,
+          noSwiping: true,
+          allowSlidePrev: false,
+          allowSlideNext: false
+      }
+  }
+})

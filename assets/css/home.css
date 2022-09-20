@@ -16,18 +16,21 @@
   border-radius: 20px;
   padding: 20px;
   text-align: center;
+  width: 208px;
 }
 
 .home-classes .classes-card .classes-card-bgimg {
   position: absolute;
-  right: -63px;
+  right: 0px;
   z-index: -1;
   top: -75px;
 }
 .home-classes .class-card-heading {
   font-family: 'Poppins';
 }
-
+.home-classes .classes-card-top {
+  margin-left: 61px;
+}
   /*--------------------------------------------------------------
 # Price Section Starts
 --------------------------------------------------------------*/
@@ -65,18 +68,26 @@ color: #7A5C8D;
 }
 .price-section .pricing-display .pricing-per-month {
 align-self: flex-end;
+margin-bottom: 35px;
+font-family: 'Poppins';
 }
 .price-section .pricing-display .pricing-symbol {
 font-size: 18px;
-margin-top: 1.5rem;
+margin-top: 24px;
+font-family: 'Poppins';
 }
 .price-section .card-content hr{
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid #008878;
 }
-
+.price-section .pricing-display .pricing-per-month {
+  align-self: flex-end;
+  margin-bottom: 18px;
+  font-family: 'Poppins';
+  font-size: 14px;
+}
   /*--------------------------------------------------------------
 # Testimonial Section Starts
 --------------------------------------------------------------*/
