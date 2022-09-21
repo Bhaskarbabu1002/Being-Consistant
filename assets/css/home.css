@@ -14,22 +14,22 @@
 .home-classes .classes-card .personal-training-card{
   background: #F8F8F8;
   border-radius: 20px;
-  padding: 20px;
+  padding: 22px;
   text-align: center;
   width: 208px;
 }
 
 .home-classes .classes-card .classes-card-bgimg {
   position: absolute;
-  right: 0px;
+  right: -25px;
   z-index: -1;
   top: -75px;
 }
 .home-classes .class-card-heading {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .home-classes .classes-card-top {
-  margin-left: 61px;
+  margin-left: 50px;
 }
   /*--------------------------------------------------------------
 # Price Section Starts
@@ -52,7 +52,7 @@
   z-index: 1;
 }
 .price-section .card-content .card-title h3 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   color: #454545;
@@ -62,19 +62,19 @@
   gap: 20px;
 }
 .price-section .card-content .pricing-display .pricing-number{
-  font-family: 'Poppins';
+  font-family: "Poppins";
 font-size: 80px;
 color: #7A5C8D;
 }
 .price-section .pricing-display .pricing-per-month {
 align-self: flex-end;
 margin-bottom: 35px;
-font-family: 'Poppins';
+font-family: "Poppins";
 }
 .price-section .pricing-display .pricing-symbol {
 font-size: 18px;
 margin-top: 24px;
-font-family: 'Poppins';
+font-family: "Poppins";
 }
 .price-section .card-content hr{
   margin-top: 2rem;
@@ -84,8 +84,8 @@ font-family: 'Poppins';
 }
 .price-section .pricing-display .pricing-per-month {
   align-self: flex-end;
-  margin-bottom: 18px;
-  font-family: 'Poppins';
+  margin-bottom: 33px;
+  font-family: "Poppins";
   font-size: 14px;
 }
   /*--------------------------------------------------------------

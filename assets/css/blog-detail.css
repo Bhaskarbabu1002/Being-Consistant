@@ -1,20 +1,28 @@
 .blog-hero-img img{
     z-index: 1;
     position: relative;
+    width: 100%;
   }
-
+  .blog-description-section {
+    margin-top: 48px;
+  }
 .blog-description-section .blog_heading {
 font-size: 40px;
 font-weight: 600;
-font-family: 'Poppins';
-color: #000;
+font-family: "Poppins";
 width: 80%;
 margin: 30px 0px;
   }
-
+  .date-time-div {
+    align-self: center;
+  }
   .blog_sub_heading {
     font-weight: 600;
-    font-family: 'Poppins';
+    font-family: "Poppins";
+    color: #000;
+    margin-bottom: 48px;
+  }
+  .things-heading {
     color: #000;
   }
   .blogs-social-media .blogs-social-content {

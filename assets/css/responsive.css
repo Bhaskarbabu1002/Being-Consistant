@@ -17,10 +17,10 @@
         line-height: 164%;
         margin-bottom: 0;
         font-weight: 400;
-        font-family: 'PT Sans';
+        font-family: "PT Sans";
     }
     .heading {
-        font-family: 'Poppins';
+        font-family: "Poppins";
         letter-spacing: 0.715em;
         font-size: 14px;
     }
@@ -31,18 +31,18 @@
         margin: 100px 0 100px 0;
     }
 
-    .grid-row {
+    /* .grid-row {
         margin-left: 0rem;
         margin-right: 0rem;
-      }
+      } */
     
       .grid-col {
-        padding-left: 0rem;
-        padding-right: 0rem;
-      }
+        padding-left: 15px;
+        padding-right: 15px;
+    }
       .blogs-grid-col {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 24px;
+        padding-right: 24px;
       }
     /*--------------------------------------------------------------
     # Header Starts 
@@ -78,7 +78,7 @@
             height: 100vh;
         }
         header .navbar-nav .nav-link {
-            font-family: 'Poppins';
+            font-family: "Poppins";
             font-weight: 400;
             font-size: 22px;
             line-height: unset;
@@ -91,11 +91,11 @@
             gap: 6px;
           }
           .footer_section .footer_menu .footer_nav_links:after {
-            content: '|';
+            content: "|";
             padding: 0px 0px 0px 6px;
           }
           .footer_section .footer_contact_details {
-            margin: 0px 49px;
+            margin: 0px 40px;
           }
           .footer_section .footer_contact_details .location_div{
             display: flex;
@@ -117,6 +117,9 @@
         }
 .Hero-image {
     margin-top: 60px;
+}
+.blogs-hero-img {
+    margin-top: 0px;
 }
        .home-about .about-image-stack {
         padding-left: 1rem;
@@ -181,7 +184,7 @@
             margin: 15px 0px;
         }
         .price-section .card-content .pricing-display .pricing-number {
-            font-family: 'Poppins';
+            font-family: "Poppins";
             font-size: 50px;
             color: #7A5C8D;
         }
@@ -207,16 +210,28 @@
         .blogs-section .blogs_bg {
         display: none;
         }
-        .blog-description-section .blog_heading {
-            font-size: 27px;
-            font-weight: 600;
-            font-family: 'Poppins';
-            color: #000;
-            width: 100%;
-            margin: 30px 0px;
+        .blogs-section {
+            position: relative;
+            margin-top: -60px 0px;
         }
+        .blog-description-section {
+            margin-top: 10px;
+          }
+        .blog-description-section .blog_heading {
+            font-size: 28px;
+            font-weight: 600;
+            font-family: "Poppins";
+            width: 100%;
+            margin: 15px 0px;
+        }
+        .blog-description-section .blog_sub_heading {
+            font-weight: 600;
+            font-family: "Poppins";
+            color: #000;
+            margin-bottom: 20px;
+          }
         .blogs-card .card-content .card-title h3 {
-            font-family: 'Poppins';
+            font-family: "Poppins";
             font-weight: 700;
             font-size: 14px;
             line-height: 115.61%;
@@ -243,7 +258,17 @@
         .application-card {
             margin: 0;
         }
-
+        .client-application-card {
+            background: #F8F8F8;
+            border-radius: 20px;
+            /* padding: 50px 35px 45px 35px; */
+            margin: 0px;
+        }
+        .client-application-card .aplication-img {
+            padding-top: -19px;
+            position: unset;
+            margin-top: -40px;
+        }
         .application-card .apply-btn {
             padding: 4px 40px 39px 40px;
             text-align: center;
@@ -252,6 +277,23 @@
             padding: 30px;
         }
 
+        .blogs-card {
+            background: #FFFFFF;
+            border-radius: 35px;
+            border: 0;
+            margin: 14px 0px;
+          }
+          
+          .blogs-social-media .blogs-social-content {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            align-items: start;
+            gap: 10px;
+        }
+        .date-time-div {
+            align-self: flex-start;
+        }
          /*--------------------------------------------------------------
     # Testimonials Section
     --------------------------------------------------------------*/
@@ -308,7 +350,7 @@
             text-align: center;
         }
         .about-section .about-image-top1 {
-            margin-top: 36px;
+            margin-top: 30px;
         }
         .about-section .about-image-top1 img {
             border-bottom-left-radius: 95px;
@@ -324,7 +366,7 @@
             width: 220px;
         }
         .about-section .about-image-top2 {
-            margin-top: 83px;
+            margin-top: 69px;
         }
 
         /* .team-swiper-arrows {
@@ -337,7 +379,7 @@
         }
         .our-vision .vision-bg-img {
             position: absolute;
-            right: -13px;
+            right: 1px;
             z-index: -1;
             top: -35px;
         }
@@ -352,6 +394,7 @@
             padding-left: 0px;
             padding-right: 0px;
           }
+     
     }
     /*--------------------------------------------------------------
     # tab view starts
@@ -359,16 +402,16 @@
     
     @media (min-width: 768px) and (max-width: 991.98px) {
         .grid-col {
-            padding-left: 0.8rem !important;
-            padding-right: 0.8rem !important;
+            padding-left: 12.8px !important;
+            padding-right: 12.8px !important;
         }
-        .grid-row {
+        /* .grid-row {
             margin-left: -0.8rem !important;
             margin-right: -0.8rem !important;
-        }
+        } */
         .blogs-grid-col {
-            padding-left: 0.8rem;
-            padding-right: 0.8rem;
+            padding-left: 12.8px;
+            padding-right: 12.8px;
         }
         .header {
             background: #fff;
@@ -386,7 +429,7 @@
             padding: 20px 10px;
         }
         .price-section .card-content .pricing-display .pricing-number {
-            font-family: 'Poppins';
+            font-family: "Poppins";
             font-size: 30px;
             color: #7A5C8D;
             font-weight: 600;
@@ -408,19 +451,19 @@
                 padding: 50px 20px 65px 20px;
             }
             .testimonials-section .testimonial-bg {
-                margin-left: -84px;
-                min-width: 866px;
+                margin-left: -44px;
+                min-width: 775px;
             }
             .swiper-arrows {
                 position: relative;
-                bottom: 238px;
-                margin: 0px -72px;
+                bottom: 316px;
+                margin: 0px -46px;
             }
 
             .home-blogs-section .blogs_bg {
-                margin-left: -84px;
-                min-width: 866px;
-            } 
+                margin-left: -44px;
+                min-width: 775px;
+            }
 
             .blogs-section .blogs_bg {
                 position: absolute;
@@ -440,14 +483,15 @@
 
             .team-swiper-arrows {
                 position: relative;
-                bottom: 51px;
-                margin: 0px -72px;
+                bottom: 31px;
+                margin: 0px -54px;
             }
         
 .container, .container-md, .container-sm {
     max-width: 720px;
 
 }
+
 
     }
 
@@ -456,6 +500,14 @@
     --------------------------------------------------------------*/
      
     @media (min-width: 992px) and (max-width: 1199.98px) {
+        .grid-col {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .blogs-grid-col {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         .testimonials-section .testimonial-bg {
             position: absolute;
             height: 400px;
@@ -463,8 +515,8 @@
             border-top-right-radius: 90px;
             border-top-left-radius: 90px;
             z-index: -1;
-            margin-left: -116px;
-            min-width: 1164px;
+            margin-left: -51px;
+            min-width: 1031px;
        
       }
       .home-blogs-section .blogs_bg {
@@ -495,13 +547,13 @@
     }
     .swiper-arrows {
         position: relative;
-        bottom: 269px;
-        margin: 0px -72px;
+        bottom: 203px;
+        margin: 0px -55px;
     }
     .team-swiper-arrows {
         position: relative;
-        bottom: 104px;
-        margin: 0px -72px;
+        bottom: 85px;
+        margin: 0px -52px;
     }
     .container, .container-lg, .container-md, .container-sm {
         max-width: 960px;
@@ -515,14 +567,62 @@
         z-index: -1;
         top: -75px;
     }
+    .home-blogs-section .blogs_bg {
+        position: absolute;
+        height: 400px;
+        background: #F2F2F2;
+        border-bottom-right-radius: 90px;
+        border-bottom-left-radius: 90px;
+        z-index: -1;
+        top: 50%;
+        margin-left: -51px;
+        min-width: 1031px;
+    }
+    .home-blogs-section .blogs-main-btn {
+        display: flex;
+        justify-content: end;
+        padding-top: 0px;
+        position: relative;
+    }
 
 }
       
 
-@media (min-width: 1200px){
+@media (min-width: 1199.98px) and (max-width: 1399.98px) {
 .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1250px;
+    max-width: 1140px;
   margin: 0 auto;
+}
+.home-blogs-section .blogs_bg {
+    position: absolute;
+    height: 400px;
+    background: #F2F2F2;
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    z-index: -1;
+    top: 48.5%;
+    margin-left: -56px;
+    min-width: 1225px;
+}
+.swiper-arrows {
+    position: relative;
+    bottom: 259px;
+    margin: 0px -53px;
+}
+.team-swiper-arrows {
+    position: relative;
+    bottom: 128px ;
+    margin: 0px -53px ;
+}
+.testimonials-section .testimonial-bg {
+    position: absolute;
+    height: 400px;
+    background: #F2F2F2;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px;
+    z-index: -1;
+    margin-left: -51px;
+    min-width: 1209px;
 }
 }
 

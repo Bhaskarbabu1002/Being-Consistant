@@ -21,12 +21,12 @@
         <div class="container">
         <nav id="navbar" class="navbar navbar-expand-lg">
           <a href="index.html" class="navbar-brand">
-            <img src="./assets/images/logo/Main-Logo.png" class="img img-fluid" alt=""/>
+            <img src="./assets/images/logo/Main-Logo.png" class="img img-fluid" alt="Main-Logo"/>
           </a>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span> </span>
-            <span> </span>
-            <span> </span>
+          <span class="navbar_toggle1"> </span>
+          <span class="navbar_toggle2"> </span>
+          <span class="navbar_toggle3"> </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto text-center">
@@ -55,7 +55,7 @@
                 Contact
                 </a>
               </li>
-              <li class="nav-item mt-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <a href="#" class="main-button">
                 Register
                 </a>
@@ -66,7 +66,8 @@
     </div>
       </header>
       <div class="header-wave">
-        <img src="assets/images/Header_wave.png" class="img img-fluid" alt="">
+        <img src="assets/images/Header_wave.png" class="img img-fluid d-none d-md-block" alt="Header_wave">
+        <img src="assets/images/Header-mobile-wave.png" class="img img-fluid header-mobile-img d-md-none d-block" alt="Header_wave">
       </div>
 
   <!-- End Header -->
@@ -75,7 +76,7 @@
  <div class="hero section-wrapper">
     <div class="container">
       <div class="row grid-row">
-        <div class="col-md-6 grid-col">
+        <div class="col-md-6 grid-col order-2 order-md-1">
          <div class="hero-text">
           <h1>Lorem ipsum dolor sit amet</h1>
           <p class="date-time">22 May 2022, 1 min read</p>
@@ -85,9 +86,9 @@
             <a href="blog-detail.html" class="read-more-btn">Read more</a>
           </div>
         </div>
-        <div class="col-md-6 grid-col">
-            <div class="Hero-image">
-                  <img src="./assets/images/Blogs_Banner.png" class="img img-fluid" alt="">
+        <div class="col-md-6 grid-col order-1 order-md-2">
+            <div class="Hero-image blogs-hero-img">
+                  <img src="./assets/images/Blogs_Banner.png" class="img img-fluid" alt="Blogs_Banner">
               </div>
           </div>
       </div>
@@ -100,7 +101,7 @@
     <div class="container">
     <div class="blogs-container">
       <div class="row grid-row">
-        <div class="col-md-4 blogs-grid-col my-4">
+        <div class="col-md-4 blogs-grid-col">
           <div class="card blogs-card">
             <div class="blogs_img">
               <img src="assets/images/Blog_1.png" class="img img-fluid" alt="image">
@@ -119,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 blogs-grid-col my-4">
+        <div class="col-md-4 blogs-grid-col">
           <div class="card blogs-card">
             <div class="blogs_img">
               <img src="assets/images/Blog_2.png" class="img img-fluid" alt="image">
@@ -138,7 +139,7 @@
             </div>
           </div>
           </div>
-          <div class="col-md-4 blogs-grid-col my-4">
+          <div class="col-md-4 blogs-grid-col">
             <div class="card blogs-card">
               <div class="blogs_img">
                 <img src="assets/images/Blog_3.png" class="img img-fluid" alt="image">
@@ -157,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 blogs-grid-col my-4">
+          <div class="col-md-4 blogs-grid-col">
             <div class="card blogs-card">
               <div class="blogs_img">
                 <img src="assets/images/Blog_1.png" class="img img-fluid" alt="image">
@@ -176,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 blogs-grid-col my-4">
+          <div class="col-md-4 blogs-grid-col">
             <div class="card blogs-card">
               <div class="blogs_img">
                 <img src="assets/images/Blog_2.png" class="img img-fluid" alt="image">
@@ -195,7 +196,7 @@
               </div>
             </div>
             </div>
-            <div class="col-md-4 blogs-grid-col my-4">
+            <div class="col-md-4 blogs-grid-col">
               <div class="card blogs-card">
                 <div class="blogs_img">
                   <img src="assets/images/Blog_3.png" class="img img-fluid" alt="image">
@@ -214,7 +215,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 blogs-grid-col my-4">
+            <div class="col-md-4 blogs-grid-col">
                 <div class="card blogs-card">
                   <div class="blogs_img">
                     <img src="assets/images/Blog_1.png" class="img img-fluid" alt="image">
@@ -233,7 +234,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 blogs-grid-col my-4">
+              <div class="col-md-4 blogs-grid-col">
                 <div class="card blogs-card">
                   <div class="blogs_img">
                     <img src="assets/images/Blog_2.png" class="img img-fluid" alt="image">
@@ -252,7 +253,7 @@
                   </div>
                 </div>
                 </div>
-                <div class="col-md-4 blogs-grid-col my-4">
+                <div class="col-md-4 blogs-grid-col">
                   <div class="card blogs-card">
                     <div class="blogs_img">
                       <img src="assets/images/Blog_3.png" class="img img-fluid" alt="image">
@@ -271,7 +272,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 blogs-grid-col my-4">
+                <div class="col-md-4 blogs-grid-col">
                     <div class="card blogs-card">
                       <div class="blogs_img">
                         <img src="assets/images/Blog_1.png" class="img img-fluid" alt="image">
@@ -290,7 +291,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 blogs-grid-col my-4">
+                  <div class="col-md-4 blogs-grid-col">
                     <div class="card blogs-card">
                       <div class="blogs_img">
                         <img src="assets/images/Blog_2.png" class="img img-fluid" alt="image">
@@ -309,7 +310,7 @@
                       </div>
                     </div>
                     </div>
-                    <div class="col-md-4 blogs-grid-col my-4">
+                    <div class="col-md-4 blogs-grid-col">
                       <div class="card blogs-card">
                         <div class="blogs_img">
                           <img src="assets/images/Blog_3.png" class="img img-fluid" alt="image">
@@ -328,7 +329,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4 blogs-grid-col my-4">
+                    <div class="col-md-4 blogs-grid-col">
                         <div class="card blogs-card">
                           <div class="blogs_img">
                             <img src="assets/images/Blog_1.png" class="img img-fluid" alt="image">
@@ -347,7 +348,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4 blogs-grid-col my-4">
+                      <div class="col-md-4 blogs-grid-col">
                         <div class="card blogs-card">
                           <div class="blogs_img">
                             <img src="assets/images/Blog_2.png" class="img img-fluid" alt="image">
@@ -366,7 +367,7 @@
                           </div>
                         </div>
                         </div>
-                        <div class="col-md-4 blogs-grid-col my-4">
+                        <div class="col-md-4 blogs-grid-col">
                           <div class="card blogs-card">
                             <div class="blogs_img">
                               <img src="assets/images/Blog_3.png" class="img img-fluid" alt="image">
@@ -385,10 +386,8 @@
                             </div>
                           </div>
                         </div>
-
-                   
       </div>
-      <div class="load-more-btn text-center my-5">
+      <div class="load-more-btn text-center ">
         <a href="#" class="main-button">Load more</a>
     </div>
     </div>

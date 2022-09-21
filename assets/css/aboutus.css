@@ -47,8 +47,9 @@
   }
   .team-swiper-arrows {
     position: relative;
-    bottom: 150px;
+    bottom: 154px;
     margin: 0px -63px;
+  
   }
 
   /*--------------------------------------------------------------
@@ -57,4 +58,19 @@
 
 .our-vision .vision-img img{
   width: 100%;
+}
+
+.client-application-card {
+  background: #F8F8F8;
+    border-radius: 20px;
+    /* padding: 50px 35px 45px 35px; */
+     margin: 270px 35px 0px 35px;
+}
+
+.client-application-card .application-card-text {
+  padding: 40px;
+}
+.client-application-card .aplication-img {
+  margin-top: -50px;
+    position: absolute;
 }

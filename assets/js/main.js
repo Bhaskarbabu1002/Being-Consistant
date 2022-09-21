@@ -18,35 +18,17 @@ $(document).ready(function () {
         speed: 400,
         spaceBetween: 100,
         initialSlide: 0,
-        // slidesToShow: 3,
-        // infinite:true,
-        //truewrapper adoptsheight of active slide
-        autoHeight: false,
-        // Optional parameters
-        direction: 'horizontal',
-        
+        // mousewheel: true,
+        // effect: 'fade',
+        effect: 'slide',   
         loop: true,
-        // delay between transitions in ms
-        // autoplay: 5000,
-        autoplayStopOnLast: false, // loop false also
-
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
 
         },
-        // And if we need scrollbar
-        //scrollbar: '.swiper-scrollbar',
-        // "slide", "fade", "cube", "coverflow" or "flip"
-        effect: 'slide',
-        // Distance between slides in px.
-        //
         slidesPerView: 3,
-        //
-        centeredSlides: true,
-        //
-        slidesOffsetBefore: 0,
         //
         grabCursor: true,
         breakpoints: {
@@ -66,9 +48,9 @@ $(document).ready(function () {
                 slidesPerView: 3,
          
             }
-        }
-    })
-
+        },
+    });
+  
         // Swiper Team carousel
        var mySwiper = new Swiper('.swiper-team-container', {
         speed: 400,
@@ -118,7 +100,7 @@ $(document).ready(function () {
             },
             // when window width is <= 640px
             767: {
-                slidesPerView: 2
+                slidesPerView: 3
             },
             1200: {
                 slidesPerView: 3,
@@ -182,14 +164,28 @@ $(document).ready(function () {
           slidesPerView: 2,
           noSwiping: false,
          allowSlidePrev: true,
-          allowSlideNext: true
+          allowSlideNext: true,
+          spaceBetween: 20,
       },
       991: {
           slidesPerView: 3,
           // navigation: false,
           noSwiping: true,
           allowSlidePrev: false,
-          allowSlideNext: false
+          allowSlideNext: false,
       }
   }
 })
+
+// Form-Validation
+
+window.addEventListener('load', function() {
+var form = document.getElementById('needs-validation');
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+  event.preventDefault();
+  event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+}, false);
