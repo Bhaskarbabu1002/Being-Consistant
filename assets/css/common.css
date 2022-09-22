@@ -735,6 +735,7 @@ height: 52px;
     content: url(../images/Icons/Plus_Icon.png);
     position: absolute;
     right: 0;
+    top: 0;
     font-weight: 600;
   }
   
@@ -743,8 +744,11 @@ height: 52px;
     font-weight: 600;
   }
   .collapse-card {
-    padding: 45px 0px 0px 0px;
-  }
+    padding: 40px 32px 40px 32px;
+    background: #F8F8F8;
+    border-radius: 32px;
+    margin: 20px 0px;
+}
   .collapse-card-body {
     margin-top: 20px;
   }
@@ -753,7 +757,9 @@ height: 52px;
     border: 0;
     border-top: 1px solid #000;
   }
-
+.faq-main-btn {
+  text-align: right;
+}
 
 .our-vision .vision-img img{
     border-bottom-right-radius: 95.5px;

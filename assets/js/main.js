@@ -15,11 +15,12 @@ $(document).ready(function () {
 
     // // Swiper Testimonial 
     var mySwiper = new Swiper('.swiper-testimonial-container', {
-        speed: 400,
+        speed: 800,
         spaceBetween: 100,
         initialSlide: 0,
         // mousewheel: true,
         // effect: 'fade',
+        parallax: !0,
         effect: 'slide',   
         loop: true,
         // Navigation arrows
@@ -50,6 +51,7 @@ $(document).ready(function () {
             }
         },
     });
+    
   
         // Swiper Team carousel
        var mySwiper = new Swiper('.swiper-team-container', {
@@ -189,3 +191,24 @@ if (form.checkValidity() === false) {
 form.classList.add('was-validated');
 }, false);
 }, false);
+
+
+// Modal Script
+
+function showMe(value){
+    if(value==="personal-training"){
+          document.getElementById('personal-training').style.display="block";
+          document.getElementById('21-consistent').style.display="none";
+          document.getElementById('online-class').style.display="none";
+    }
+    if(value==="21-consistent"){
+          document.getElementById('personal-training').style.display="none";
+          document.getElementById('21-consistent').style.display="block";
+          document.getElementById('online-class').style.display="none";
+    }
+    if(value==="online-class"){
+          document.getElementById('personal-training').style.display="none";
+          document.getElementById('21-consistent').style.display="none";
+          document.getElementById('online-class').style.display="block";
+    }
+}

@@ -12,6 +12,10 @@
         color: #008878;
         line-height: 130.5%;
     }
+    h5 {
+        font-size: 14px;
+        font-weight: 600;
+      }
     p {
         font-size: 14px;
         line-height: 164%;
@@ -387,6 +391,9 @@
             width: 80px;
             height: auto;
         }
+        .our-vision .vision-img img {
+            border-bottom-right-radius: 150.5px;
+        }
           .about-section .home-about-text {
             margin-top: 54px;
           }
@@ -394,7 +401,38 @@
             padding-left: 0px;
             padding-right: 0px;
           }
+          .personal-training-image-top img {
+            width: 100%;
+            border-bottom-left-radius: 150.5px !important;
+        }
+        .personal-training-image-bottom {
+            right: -12px !important;
+            top: -35px !important;
+            left: unset !important;
+          }
+          .personal-training-image-bottom img {
+            width: 80px;
+            height: auto;
+            display: block;
+        }
+        .personel-training .home-about-text {
+            margin-top: 30px;
+        }
      
+/* Faq Section */
+.faq-questions {
+    margin: 0px 0px !important;
+}
+.collapse-card {
+    padding: 25px 25px 25px 25px;
+    background: #F8F8F8;
+    border-radius: 22px;
+    margin: 15px 0px;
+}
+.faq-main-btn {
+    text-align: center;
+  } 
+
     }
     /*--------------------------------------------------------------
     # tab view starts
@@ -624,5 +662,108 @@
     margin-left: -51px;
     min-width: 1209px;
 }
+.application-card {
+    background: #F8F8F8;
+    border-radius: 20px;
+    /* padding: 50px 35px 45px 35px; */
+    margin: 270px 50px 0px 50px;
+}
 }
 
+ /*--------------------------------------------------------------
+    # Class page modal responsive
+    --------------------------------------------------------------*/
+    @media (max-width: 1199.98px) {
+        .d-md-none{
+            display: none !important;
+        }
+        .d-md-block{
+            display: block !important;
+        }
+        .personal-training-img{
+            display: none !important;
+        }
+        .personal-training-img-mobile{
+            display: block !important;
+        }
+        .modal-wave{
+            position: absolute;
+            left: 0px;
+            z-index: 9;
+            top: -287px !important;
+            width: 100px !important;
+            height: 100px !important;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 0 !important;
+        }
+        .register-modal-head{
+            margin: 20px !important;
+            width: 100%;
+        }
+        .modal-open .modal{
+            width: 100%;
+        }
+        .class-select{
+            margin-top: 160px;
+            margin-left: 30px;
+        }
+        .personal-image-top1 {
+            margin-right: 60px !important;
+        }
+        img.img.img-fluid.personal-taining-man {
+            margin-top: -520px;
+            width: 64%;
+        }
+        
+        .register-modal-body{
+            margin: 20px !important;
+            width: 100%;
+        }
+        .modal-img-text {
+            top: -152px !important;
+            text-align: center;
+            left: 26%;
+        }
+        .personal-trainig-form{
+            width: 90%;
+        }
+        .mobile-align {
+            display: flex;
+            margin-left: 0px;
+        }
+        .wi-50{
+            width: 50%;
+        }
+        .text-sm-center{
+            text-align: center !important;
+        }
+
+    }
+
+    @media (min-width: 1199.98px) {
+        .d-db-none{
+            display: none !important;
+        }
+        .d-db-block{
+            display: block !important;
+        }
+        .personal-training-img{
+            display: block !important;
+        }
+        .personal-training-img-mobile{
+            display: none !important;
+        }
+        .text-sm-center{
+            text-align: right !important;
+        }
+
+
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+
+        .register-modal-body{
+            margin: 50px !important;
+            width: 100%;
+        }
+
+    }
