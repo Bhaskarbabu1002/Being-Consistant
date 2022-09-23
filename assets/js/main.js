@@ -123,21 +123,6 @@ $(document).ready(function () {
   allowSlideNext: false,
   autoplay: false,
   keyboard: false,
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-
-  },
-
-  // // And if we need scrollbar
-  // //scrollbar: '.swiper-scrollbar',
-  // // "slide", "fade", "cube", "coverflow" or "flip"
-  // effect: 'slide',
-  // // Distance between slides in px.
-  // spaceBetween: 90,
-  // //
-  // slidesPerView: 3,
-  // //
   centeredSlides: true,
   // //
   slidesOffsetBefore: 0,

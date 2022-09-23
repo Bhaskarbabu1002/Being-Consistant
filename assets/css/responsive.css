@@ -445,6 +445,10 @@
     color: #000;
     margin-top: 90px;
 }
+.home-classes .class-grids {
+    display: unset ;
+    
+  }
     }
     /*--------------------------------------------------------------
     # tab view starts
@@ -476,8 +480,12 @@
             width: 330px;
         }
         .home-classes .classes-card .personal-training-card {
-            padding: 20px 10px;
-        }
+                background: #F8F8F8;
+                border-radius: 20px;
+                text-align: center;
+                width: 170px;
+                padding: 20px 10px;
+        } 
         .price-section .card-content .pricing-display .pricing-number {
             font-family: "Poppins";
             font-size: 30px;
@@ -613,10 +621,11 @@
     }
     .home-classes .classes-card .classes-card-bgimg {
         position: absolute;
-        right: -62px;
+        right: -50px;
         z-index: -1;
         top: -75px;
     }
+   
     .home-blogs-section .blogs_bg {
         position: absolute;
         height: 400px;

@@ -28,9 +28,15 @@
 .home-classes .class-card-heading {
   font-family: "Poppins";
 }
-.home-classes .classes-card-top {
-  margin-left: 50px;
+
+.home-classes .class-grids {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+/* .home-classes .classes-card-top {
+  margin-left: 50px;
+} */
   /*--------------------------------------------------------------
 # Price Section Starts
 --------------------------------------------------------------*/
