@@ -7,7 +7,7 @@
         line-height: 130.5%;
     }
     h2 {
-        font-size: 21px;
+        font-size: 20px;
         font-weight: 600;
         color: #008878;
         line-height: 130.5%;
@@ -348,7 +348,7 @@
         }
         .about-image-stack-top img {
             width: 100%;
-            border-bottom-left-radius: 90.5px;
+            border-bottom-left-radius: 150.5px;
         }
         .about-section .about-image-bottom  {
             text-align: center;
@@ -432,7 +432,19 @@
 .faq-main-btn {
     text-align: center;
   } 
+.contact-header {
+    margin-bottom: 60px;
+}
+.contact-btn {
+    text-align: center;
+  }
 
+/* error-Page */
+.error-text p {
+    font-size: 18px;
+    color: #000;
+    margin-top: 90px;
+}
     }
     /*--------------------------------------------------------------
     # tab view starts

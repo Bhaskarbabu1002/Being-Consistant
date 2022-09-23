@@ -4,7 +4,13 @@
 
 .error-img-bottom {
     position: absolute;
-    left: 29.5rem;
-    top: -2px;
+    left: 50%;
+    top: 0;
     z-index: -1;
+    margin-left: -139px;
+}
+.error-text p {
+    font-size: 22px;
+    color: #000;
+    margin-top: 70px;
 }
