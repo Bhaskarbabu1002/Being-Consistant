@@ -34,13 +34,116 @@
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
     Open modal
   </button>
-  
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fitnessModal">
+    Open modal
+  </button>
   <!-- Modal -->
   <div class="modal register-modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="registerModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="register-modal-body">
+            <form>
+                <div class="row form-row">
+                  <div class="col-md-6 my-3">
+                    <div class="form-input-material">
+                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="username" class="lz-label">First Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 my-3">
+                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="username" class="lz-label">Last Name</label>
+                  </div>
+                  <div class="col-md-6 my-3">
+                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="username" class="lz-label">DOB</label>
+                  </div>
+                  <div class="col-md-6 my-3">
+                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="username" class="lz-label">E-mail</label>
+                  </div>
+                  <div class="col-md-6 my-3">
+                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="username" class="lz-label">Phone Number</label>
+                  </div>
+                  <div class="col-md-3 my-3">
+                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="username" class="lz-label">Height (inch)</label>
+                  </div>
+                  <div class="col-md-3 my-3">
+                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="username" class="lz-label">Weight (lbs/ kgs)</label>
+                  </div>
+                  <div class="col-md-6 my-3">
+                    <p>Medical Conditions</p>
+                  </div>
+                  <div class="col-md-3 my-3">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked1" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked1">Yes</label>
+                      </div>
+                </div>
+                  <div class="col-md-3 my-3">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked2" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked2">No</label>
+                      </div>
+                </div>
+                  <div class="col-md-12 my-3">
+                    <p>What are your health and fitness goals?</p>
+                  </div>
+                  <div class="col-md-4 my-3">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked3" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked3">  Fat Loss</label>
+                      </div>
+                  </div>
+                  <div class="col-md-4 my-3">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked4" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked4">  Strength</label>
+                      </div>
+                  </div>
+                  <div class="col-md-4 my-3">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked5" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked5">Endurance</label>
+                      </div>
+                  </div>
+                  <div class="col-md-4 my-3">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked6" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked6"> Weight Gain</label>
+                      </div>
+                  </div>
+                  <div class="col-md-4 my-3">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultChecked6" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="defaultChecked6"> Flexibility</label>
+                      </div>
+                  </div>
+                </div>
+                <div class="mt-4 text-right">
+                    <button type="submit" class="main-button">Submit</button>
+                   </div>
+              </form>
+        </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal register-modal fade" id="fitnessModal" tabindex="-1" role="dialog" aria-labelledby="fitnessModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="fitnessModalLabel">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -254,7 +357,7 @@
         </form>
       </div>
     </div>  
-</div>
+  </div>
 
 <script src="assets/vendor/bootstrap/js/jquery.slim.min.js"></script>
 <script src="assets/vendor/bootstrap/js/popper.min.js"></script>

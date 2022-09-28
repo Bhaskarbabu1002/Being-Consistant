@@ -3,13 +3,13 @@
     h1 {
         font-size: 28px;
         font-weight: 600;
-        color: #008878;
+        color: #24CCD4;
         line-height: 130.5%;
     }
     h2 {
         font-size: 20px;
         font-weight: 600;
-        color: #008878;
+        color: #24CCD4;
         line-height: 130.5%;
     }
     h5 {
@@ -103,10 +103,13 @@
           }
           .footer_section .footer_contact_details .location_div{
             display: flex;
-            justify-content: unset;
+            justify-content: center;
             gap: 20px;
             line-height: 20.32;
           }
+          .footer_contact_details {
+            display: block;
+        }
     /*--------------------------------------------------------------
     # Hero Section
     --------------------------------------------------------------*/
@@ -156,9 +159,9 @@
         }
         .home-classes .classes-card .classes-card-bgimg {
             position: absolute;
-            right: 4px;
+            right: 3px;
             z-index: -1;
-            top: -233px;
+            top: -230px;
             width: 80px;
         }
         .home-classes .classes-card .personal-training-card {
@@ -195,6 +198,17 @@
         .price-section .card-content .pricing-display {
             display: flex;
             gap: 13px;
+        }
+        .price-section .pricing-display .pricing-per-month {
+            align-self: flex-end;
+            margin-bottom: 23px;
+            font-family: "Poppins";
+            font-size: 14px;
+        }
+        .price-section .pricing-display .pricing-symbol {
+            font-size: 18px;
+            margin-top: 14px;
+            font-family: "Poppins";
         }
      /*--------------------------------------------------------------
     # Home Blogs Section
@@ -239,7 +253,7 @@
             font-weight: 700;
             font-size: 14px;
             line-height: 115.61%;
-            color: #860005;
+            color: #24CCD4;
         }
         .card_description {
             font-size: 12px;
@@ -449,6 +463,9 @@
     display: unset ;
     
   }
+  .modal-description {
+    width: 100%;
+}
     }
     /*--------------------------------------------------------------
     # tab view starts
@@ -514,7 +531,7 @@
             }
             .swiper-arrows {
                 position: relative;
-                bottom: 316px;
+                bottom: 261px;
                 margin: 0px -46px;
             }
 
@@ -605,7 +622,7 @@
     }
     .swiper-arrows {
         position: relative;
-        bottom: 203px;
+        bottom: 239px;
         margin: 0px -55px;
     }
     .team-swiper-arrows {
@@ -633,14 +650,14 @@
         border-bottom-right-radius: 90px;
         border-bottom-left-radius: 90px;
         z-index: -1;
-        top: 50%;
+        top: 51%;
         margin-left: -51px;
         min-width: 1031px;
     }
     .home-blogs-section .blogs-main-btn {
         display: flex;
         justify-content: end;
-        padding-top: 0px;
+        padding-top: 13px;
         position: relative;
     }
 
@@ -659,13 +676,19 @@
     border-bottom-right-radius: 90px;
     border-bottom-left-radius: 90px;
     z-index: -1;
-    top: 48.5%;
+    top: 51%;
     margin-left: -56px;
     min-width: 1225px;
 }
+.home-blogs-section .blogs-main-btn {
+    display: flex;
+    justify-content: end;
+    padding-top: 14px;
+    position: relative;
+}
 .swiper-arrows {
     position: relative;
-    bottom: 259px;
+    bottom: 281px;
     margin: 0px -53px;
 }
 .team-swiper-arrows {
@@ -711,7 +734,7 @@
             position: absolute;
             left: 0px;
             z-index: 9;
-            top: -287px !important;
+            top: -277px !important;
             width: 100px !important;
             height: 100px !important;
             border-top-left-radius: 20px;
@@ -758,6 +781,23 @@
         .text-sm-center{
             text-align: center !important;
         }
+        .fitness-modal-wave{
+            top: -380px !important;
+        }
+        .free-tag{
+            margin-top: -680px;
+            width: 64%;
+        }
+        .fitness-modal-head {
+            margin: 173px -39px 0 37px;
+            width: 100%;
+        }
+        .sucess-wave{
+            top: -65px !important;
+          }
+        .success-modal-body{
+            margin: 0 !important;
+        }
 
     }
 
@@ -777,7 +817,7 @@
         .text-sm-center{
             text-align: right !important;
         }
-
+    
 
     }
     @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -786,5 +826,13 @@
             margin: 50px !important;
             width: 100%;
         }
+       
 
+    }
+
+    @media (min-width: 768px) {
+        .fitness-modal-head {
+            margin: 37px 147px 0px 200px !important;
+            width: 100%;
+        }
     }

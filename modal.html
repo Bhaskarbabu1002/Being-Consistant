@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css?1549804213570">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <div class="container">
+ 
+        <form action="" class="billingform">
+          
+         
+          <div class="form-group md-group show-label">
+            <label for="">Telephone</label>
+            <input class="form-control" type="tel" id="phone" placeholder="e.g. +1 702 123 4567" value="+1 ">
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group md-group show-label">
+              <label for="">Select Country</label>
+              <select name="" id="address-country" class="form-control">
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+<script src="assets/vendor/bootstrap/js/jquery.slim.min.js"></script>
+<script src="assets/vendor/bootstrap/js/popper.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://intl-tel-input.com/node_modules/intl-tel-input/build/js/intlTelInput.js?1549804213570"></script>
+<script>
+    // International telephone format
+// $("#phone").intlTelInput();
+// get the country data from the plugin
+var countryData = window.intlTelInputGlobals.getCountryData(),
+  input = document.querySelector("#phone"),
+  addressDropdown = document.querySelector("#address-country");
+
+// init plugin
+var iti = window.intlTelInput(input, {
+  hiddenInput: "full_phone",
+  utilsScript: "https://intl-tel-input.com/node_modules/intl-tel-input/build/js/utils.js?1549804213570" // just for formatting/placeholders etc
+});
+
+// populate the country dropdown
+for (var i = 0; i < countryData.length; i++) {
+  var country = countryData[i];
+  var optionNode = document.createElement("option");
+  optionNode.value = country.iso2;
+  var textNode = document.createTextNode(country.name);
+  optionNode.appendChild(textNode);
+  addressDropdown.appendChild(optionNode);
+}
+// set it's initial value
+addressDropdown.value = iti.getSelectedCountryData().iso2;
+
+// listen to the telephone input for changes
+input.addEventListener('countrychange', function(e) {
+  addressDropdown.value = iti.getSelectedCountryData().iso2;
+});
+
+// listen to the address dropdown for changes
+addressDropdown.addEventListener('change', function() {
+  iti.setCountry(this.value);
+});
+</script>
+</body>
+</html>
