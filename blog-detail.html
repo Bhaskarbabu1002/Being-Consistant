@@ -98,10 +98,10 @@
         <p class="date-time">22 May 2022 , 2 min read</p>
     </div>
     <div class="media-icons">
-    <a href="https://www.facebook.com/"><img src="assets/images/Icons/Facebook_Icon.png" alt="Facebook_Icon"></a>
-    <a href="https://www.instagram.com/accounts/login/"><img src="assets/images/Icons/Instagram_Icon.png" alt="Instagram_Icon"></a>
-    <a href="https://twitter.com/i/flow/login"><img src="assets/images/Icons/Twitter_Icon.png" alt="Twitter_Icon.png"></a>
-    <a href="https://www.linkedin.com/login "><img src="assets/images/Icons/Linkedin_Icon.png" alt="Linkedin_Icon"></a>
+    <a href="https://www.facebook.com/"><img src="assets/images/icons/Facebook_Icon.png" alt="Facebook_Icon"></a>
+    <a href="https://www.instagram.com/accounts/login/"><img src="assets/images/icons/Instagram_Icon.png" alt="Instagram_Icon"></a>
+    <a href="https://twitter.com/i/flow/login"><img src="assets/images/icons/Twitter_Icon.png" alt="Twitter_Icon.png"></a>
+    <a href="https://www.linkedin.com/login "><img src="assets/images/icons/Linkedin_Icon.png" alt="Linkedin_Icon"></a>
     </div>
 </div>
 </div>
@@ -143,7 +143,7 @@
   <div class="container">
     <div class="text-center mb-5">
       <p class="heading">Lorem</p>
-      <h2>Blogs</h2>
+      <h2>Recent Blogs</h2>
     </div>
     <div class="swiper-container swiper-blogs-container mt-5">
      <!-- Additional required wrapper -->
@@ -214,9 +214,9 @@
     </div>
     <div class="blogs_bg">
     </div>
-    <div class="blogs-main-btn">
+    <!-- <div class="blogs-main-btn">
       <a href="#" class="main-button">View All</a>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -253,37 +253,37 @@
   <!-- footer Starts -->
   <footer>
     <div class="container">
-      <div class="footer_section text-center py-4">
+      <div class="footer_section text-center">
         <div class="footer_logo">
-       <img src="assets/images/logo/Footer_MainLogo.png" alt="">
+       <img src="assets/images/logo/Footer_MainLogo.png" class="img img-fluid" alt="">
     </div>
     <div class="footer_contact_details">
         <div class="location_div my-4" >
-            <img src="assets/images/Icons/Location_Icon.png" alt="" >
+            <img src="assets/images/icons/Location_Icon.png" class="img img-fluid" alt="" >
             <p class="text-left">New Jersey, USA</p>
         </div>
         <div class="location_div my-4">
-            <img src="assets/images/Icons/phone-call.png" alt="" >
+            <img src="assets/images/icons/phone-call.png" class="img img-fluid" alt="" >
             <p>+11 0987 6543 321</p>
         </div>
         <div class="location_div my-4">
-            <img src="assets/images/Icons/Message_Icon.png" alt="" >
+            <img src="assets/images/icons/Message_Icon.png" class="img img-fluid" alt="" >
             <p>janedoe@abc.com</p>
         </div>  
     </div>
     <div class="footer_menu">
       <ul class="footer_lists d-flex">
-        <li class="footer_nav_links"><a href="index.html" >Home</a></li>
-        <li class="footer_nav_links"><a href="about_us.html" >About</a> </li>
-        <li class="footer_nav_links"><a href="class-page.html" >Classes</a></li>
-        <li class="footer_nav_links"><a href="blogs.html" >Blogs</a></li>
-        <li class="footer_nav_links"><a href="contact.html" >Contact</a></li>
+        <li class="footer_nav_links"><a href="index.html" ><span class="hover-underline-animation">Home</span></a></li>
+        <li class="footer_nav_links"><a href="about_us.html" ><span class="hover-underline-animation">About</span></a> </li>
+        <li class="footer_nav_links"><a href="class-page.html" ><span class="hover-underline-animation">Classes</span></a></li>
+        <li class="footer_nav_links"><a href="blogs.html" ><span class="hover-underline-animation">Blogs</span></a></li>
+        <li class="footer_nav_links"><a href="contact.html" ><span class="hover-underline-animation">Contact</span></a></li>
       </ul>
   </div>
   <div class="footer_icons">
-    <a href="https://www.facebook.com/"><img src="assets/images/Icons/Facebook_svgIcon.svg" alt="Facebook_Icon"></a>
-    <a href="https://www.instagram.com/accounts/login/"><img src="assets/images/Icons/Instagram_svgIcon.svg" alt="Instagram_Icon"></a>
-    <a href="https://www.youtube.com/"><img src="assets/images/Icons/Youtube_svgIcon.svg" alt="Youtube_Icon.png"></a>
+    <a href="https://www.facebook.com/"><img src="assets/images/icons/Facebook_svgIcon.svg" class="img img-fluid" alt="Facebook_Icon"></a>
+    <a href="https://www.instagram.com/accounts/login/"><img src="assets/images/icons/Instagram_svgIcon.svg" class="img img-fluid" alt="Instagram_Icon"></a>
+    <a href="https://www.youtube.com/"><img src="assets/images/icons/Youtube_svgIcon.svg" class="img img-fluid" alt="Youtube_Icon.png"></a>
   </div>
     </div>
 </div>
@@ -361,8 +361,8 @@
                 <label for="username" class="lz-label">E-mail</label>
               </div>
               <div class="col-md-6 my-3">
-                <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                <label for="username" class="lz-label">Phone Number</label>
+                <input type="tel" class="form-control lz-input"  id="phone" value="+1 " placeholder=" " autocomplete="off" required>
+                <!-- <label for="username" class="lz-label phone-label">Phone Number</label> -->
               </div>
               <div class="col-md-6 my-3">
                 <div class="row">
@@ -376,23 +376,19 @@
                      <option>4</option>
                    </select>
                 </div>
-                   <div class="col-md-3 weight-grid">
-                     <select class="form-control">
-                       <option>Weight</option>
-                       <option>10-20</option>
-                       <option>20-30</option>
-                       <option>30-40</option>
-                       <option>40-50</option>
-                       <option>50-60</option>
-                       <option>60-70</option>
-                     </select>
-                   </div>
-                 <div class="col-md-3 weight-grid">
-                   <select class="form-control">
-                     <option>kgs</option>
-                     <option>lbs</option>
-                   </select>
-                 </div>
+                <div class="col-md-3 weight-grid">
+                  <select class="form-control">
+                    <option value="-1">Weight</option>
+                    <option value="1" id='kgsoutput'>10-20</option>
+                    <option value="2" id='lbsoutput'>60</option>
+                  </select>
+                </div>
+              <div class="col-md-3 weight-grid">
+                <select class="form-control" id='dropdown' onInput='myFunction()'>
+                  <option value="10-20">kgs</option>
+                  <option value="60">lbs</option>
+                </select>
+              </div>
                </div>
                </div>
                </div>

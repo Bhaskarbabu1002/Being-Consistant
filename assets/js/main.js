@@ -19,9 +19,10 @@ $(document).ready(function () {
         spaceBetween: 100,
         initialSlide: 0,
         // mousewheel: true,
-        // effect: 'fade',
-        parallax: !0,
-        effect: 'slide',   
+        effect: 'slide',
+        // parallax: !0,
+        // fadeEffect: { crossFade: true },
+        // effect: "fade",   
         loop: true,
         // Navigation arrows
         navigation: {
@@ -30,7 +31,6 @@ $(document).ready(function () {
 
         },
         slidesPerView: 3,
-        //
         grabCursor: true,
         breakpoints: {
             // when window width is <= 320px
@@ -234,3 +234,12 @@ input.addEventListener('countrychange', function(e) {
 addressDropdown.addEventListener('change', function() {
   iti.setCountry(this.value);
 });
+
+
+// Weight conversion
+function myFunction() {
+    var optionValue = document.getElementById("dropdown").value;
+   //  document.getElementById("output").innerHTML = optionValue;
+    document.getElementById("kgsoutput").innerHTML = optionValue;
+    document.getElementById("lbsoutput").innerHTML = optionValue;
+   }
