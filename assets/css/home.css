@@ -18,7 +18,11 @@
   text-align: center;
   width: 208px;
 }
-
+.home-classes .classes-card .personal-training-card img {
+  max-height: 45px;
+  width: auto;
+  object-fit: cover;
+}
 .home-classes .classes-card .classes-card-bgimg {
   position: absolute;
   right: -25px;

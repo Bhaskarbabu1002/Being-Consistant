@@ -105,7 +105,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            line-height: 20.32;
+            /* line-height: 20.32; */
           }
           .footer_contact_details {
             display: block;
@@ -118,11 +118,18 @@
         }
         .hero .image-stack__item-top img {
             width: 285px;
+            height: auto;
         }
         .hero-text {
             margin-top: 60px;
         }
-.Hero-image {
+        .hero .image-stack__item-bottom img {
+            width: 285px;
+            display: block;
+            height: 285px;
+            object-fit: cover;
+        }
+    .Hero-image {
     margin-top: 60px;
 }
 .blogs-hero-img {
@@ -830,9 +837,9 @@
 
     }
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         .fitness-modal-head {
-            margin: 37px 147px 0px 200px !important;
+            margin: 36px 25px 0px 68px !important;
             width: 100%;
         }
     }

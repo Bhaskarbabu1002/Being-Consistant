@@ -8,7 +8,7 @@
     <!-- Bootstrap Css link -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.css">
-    <link rel="stylesheet" href="https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css?1549804213570">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
     <!-- Css Links -->
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -24,14 +24,12 @@
         <div class="container">
         <nav id="navbar" class="navbar navbar-expand-lg">
           <a href="index.html" class="navbar-brand">
-            <img src="./assets/images/logo/Main-Logo.png" class="img img-fluid" alt=""/>
+            <img src="./assets/images/logo/Main-Logo.png" class="img img-fluid" alt="">
           </a>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="">
              <span class="navbar_toggle1"> </span>
              <span class="navbar_toggle2"> </span>
              <span class="navbar_toggle3"> </span>
-           </div>
            </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto text-center">
@@ -140,7 +138,7 @@
           <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. Senectus nulla consectetur magna euismod. Nam sit sed id elementum orci in. Sit leo, viverra potenti at ultrices penatibus amet egestas nulla. Lacus adipiscing fermentum feugiat hendrerit id nisl molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo.</p>
         </div>
         <div class="my-4">
-          <a href="#" class="btn main-button" data-toggle="modal" data-target="#sucessmodal">Register</a>
+          <a href="#" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
         </div>
         </div>
         <div class="col-md-6 grid-col order-1 order-md-2">
@@ -230,7 +228,7 @@
                         </div>
   
                         <div class="collapse-card">
-                          <div class="collapse-card-header" id="heading-2">
+                          <div class="collapse-card-header" id="heading-3">
                             <h5 class="mb-0">
                               <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit? </a>
@@ -377,19 +375,19 @@
            <img src="assets/images/logo/Footer_MainLogo.png" class="img img-fluid" alt="">
         </div>
         <div class="footer_contact_details">
-            <div class="location_div my-4" >
-                <img src="assets/images/icons/Location_Icon.png" class="img img-fluid" alt="" >
-                <p class="text-left">New Jersey, USA</p>
-            </div>
-            <div class="location_div my-4">
-                <img src="assets/images/icons/phone-call.png" class="img img-fluid" alt="" >
-                <p>+11 0987 6543 321</p>
-            </div>
-            <div class="location_div my-4">
-                <img src="assets/images/icons/Message_Icon.png" class="img img-fluid" alt="" >
-                <p>janedoe@abc.com</p>
-            </div>  
-        </div>
+          <div class="location_div my-4" >
+              <img src="assets/images/icons/Location_Icon.png" class="img img-fluid" alt="" >
+              <a href="" class="text-left">New Jersey, USA</a>
+          </div>
+          <div class="location_div my-4">
+              <img src="assets/images/icons/phone-call.png" class="img img-fluid" alt="" >
+              <a href="tel:+11 0987 6543 321" class="phone-link">+11 0987 6543 321</a>
+          </div>
+          <div class="location_div my-4">
+              <img src="assets/images/icons/Message_Icon.png" class="img img-fluid" alt="" >
+              <a href="mailto:janedoe@abc.com" class="phone-link">janedoe@abc.com</a>
+          </div>  
+      </div>
         <div class="footer_menu">
           <ul class="footer_lists d-flex">
             <li class="footer_nav_links"><a href="index.html" ><span class="hover-underline-animation">Home</span></a></li>
@@ -408,8 +406,8 @@
     </div>
   
 
- <!-- Modal -->
- <div class="modal register-modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal register-modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -480,15 +478,17 @@
                     <label for="username" class="lz-label">E-mail</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="tel" class="form-control lz-input"  id="phone" value="+1 " placeholder=" " autocomplete="off" required>
-                    <!-- <label for="username" class="lz-label phone-label">Phone Number</label> -->
+                    <div class="form-group">
+                      <input type="tel" class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
+                      <label class="phone_label label-class" for="mobile_code"></label>
+                      </div>
                   </div>
                   <div class="col-md-6 my-3">
                     <div class="row">
                      <div class="mobile-align">
                      <div class="col-md-6 weight-grid">
                        <select class="form-control">
-                         <option>Height (inchs)</option>
+                         <option>Height (inch)</option>
                          <option>1</option>
                          <option>2</option>
                          <option>3</option>
@@ -496,15 +496,15 @@
                        </select>
                     </div>
                        <div class="col-md-3 weight-grid">
-                         <select class="form-control">
+                         <select class="form-control weight-select">
                            <option value="-1">Weight</option>
                            <option value="1" id='kgsoutput'>10-20</option>
                            <option value="2" id='lbsoutput'>60</option>
                          </select>
                        </div>
                      <div class="col-md-3 weight-grid">
-                       <select class="form-control" id='dropdown' onInput='myFunction()'>
-                         <option value="10-20">kgs</option>
+                       <select class="form-control kg-select" id='dropdown' onInput='myFunction()'>
+                         <option value="10-20">kg</option>
                          <option value="60">lbs</option>
                        </select>
                      </div>
@@ -565,8 +565,8 @@
                   </div>
                   <div class="col-md-4 col-sm-6 my-3 wi-50">
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="defaultChecked6" name="defaultExampleRadios" checked>
-                        <label class="form-check-label" for="defaultChecked6"> Flexibility</label>
+                        <input type="radio" class="form-check-input" id="defaultChecked7" name="defaultExampleRadios" checked>
+                        <label class="form-check-label" for="defaultChecked7"> Flexibility</label>
                       </div>
                   </div>
                 </div>
@@ -582,8 +582,6 @@
 
           <!--21 Consistent Modal-->
         <div id="21-consistent" style="display:none" >
-          <div id="personal-training">
-          
             <div class="personal-training-img">
               <div class="personal-wave-img">
                 <div class="personal-image-top1 consistent">
@@ -632,24 +630,23 @@
                     <label for="username" class="lz-label">E-mail</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">Phone Number</label>
+                    <div class="form-group">
+                      <input type="tel" class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
+                      <label class="label-class phone_label lz-label" for="mobile_code"></label>
+                      </div>
                   </div>
+                 
                   <div class="col-md-12">
                     <div class="mt-4 text-sm-center">
                         <button type="submit" class="btn main-button submit-btn">Submit</button>
                   </div>
                   </div>
+                </div>
             </form>
-            </div>
           </div>
         </div>
-      </div>
- 
-
-    <!--online modal-->
-        <div id="online-class" style="display:none" >
-          <div id="personal-training">
+           <!--online modal-->
+           <div id="online-class" style="display:none" >
             <div class="personal-training-img">
               <div class="personal-wave-img">
                 <div class="personal-image-top1 online-class">
@@ -698,102 +695,105 @@
                     <label for="username" class="lz-label">E-mail</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">Phone Number</label>
+                    <div class="form-group">
+                      <input type="tel" class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
+                      <label class="label-class phone_label lz-label" for="mobile_code"></label>
+                      </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mt-4 text-sm-center">
                         <button type="submit" class="btn main-button submit-btn">Submit</button>
                   </div>
                   </div>
+                  </div>
                   </form>
             </div>
       </div>
-    </div>
+      </div>
   </div>
-</div>
-</div>
 </div>
 </div>
 
 
 <!--Fitness modal-->
 <div class="modal register-modal fade" id="fitnessmodal" tabindex="-1" role="dialog" aria-labelledby="fitnessModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="fitness-modal-head">
-          <div class="home-about-text">
-            <p class="heading">Lorem Ipsum</p>
-            <h2>Free Fitness Consultation</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, accumsan, est, maecenas varius quisque libero ultricies. Ultrices dolor, urna semper lectus risus.</p>
-        </div>
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<div class="modal-dialog modal-xl" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="fitness-modal-head">
+        <div class="home-about-text">
+          <p class="heading">Lorem Ipsum</p>
+          <h2>Free Fitness Consultation</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, accumsan, est, maecenas varius quisque libero ultricies. Ultrices dolor, urna semper lectus risus.</p>
       </div>
-      <div class="modal-body">
-        <div id="personal-training">
-          <div class="personal-training-img">
-            <div class="personal-wave-img">
-              <div class="personal-image-top1">
-                    <img src="assets/images/classes/free-consultation.png" class="img img-fluid personal-taining-man" alt="">
-                </div>
-            </div>
-            <div class="personal-image-bottom">
-              <img src="./assets/images/classes/modal-wave.png" class="img img-fluid modal-wave fitness-modal-wave" alt="">
-            </div>
-          </div>
-          <div class="personal-training-img-mobile">
-            <div class="personal-wave-img">
-              <div class="personal-image-top1">
-                    <img src="./assets/images/classes/free-consultation.png" class="img img-fluid free-tag" alt="">
-                </div>
-            </div>
-            <div class="personal-image-bottom">
-              <img src="./assets/images/classes/Application-wave-img.png" class="img img-fluid modal-wave fitness-modal-wave" alt="">
-            </div>
-          </div>
-          <div class="register-modal-body">
-            
-            <form class="personal-trainig-form">
-                <div class="row form-row">
-                  <div class="col-md-6 my-3">
-                    <div class="form-input-material">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">First Name</label>
-                  </div>
-                </div>
-                  <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">Last Name</label>
-                  </div>
-                  <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">DOB</label>
-                  </div>
-                  <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">E-mail</label>
-                  </div>
-                  <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">Phone Number</label>
-                  </div>
-               
-                </div>
-                <div class="mt-4 text-sm-center">
-                    <button type="submit" class="btn main-button submit-btn">Submit</button>
+      </div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div id="personal-training">
+        <div class="personal-training-img">
+          <div class="personal-wave-img">
+            <div class="personal-image-top1">
+                  <img src="assets/images/classes/free-consultation.png" class="img img-fluid personal-taining-man" alt="">
               </div>
-            </form>
+          </div>
+          <div class="personal-image-bottom">
+            <img src="./assets/images/classes/modal-wave.png" class="img img-fluid modal-wave fitness-modal-wave" alt="">
           </div>
         </div>
-        
+        <div class="personal-training-img-mobile">
+          <div class="personal-wave-img">
+            <div class="personal-image-top1">
+                  <img src="./assets/images/classes/free-consultation.png" class="img img-fluid free-tag" alt="">
+              </div>
+          </div>
+          <div class="personal-image-bottom">
+            <img src="./assets/images/classes/Application-wave-img.png" class="img img-fluid modal-wave fitness-modal-wave" alt="">
           </div>
         </div>
+        <div class="register-modal-body">
+          
+          <form class="personal-trainig-form">
+              <div class="row form-row">
+                <div class="col-md-6 my-3">
+                  <div class="form-input-material">
+                  <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                  <label for="username" class="lz-label">First Name</label>
+                </div>
+              </div>
+                <div class="col-md-6 my-3">
+                  <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                  <label for="username" class="lz-label">Last Name</label>
+                </div>
+                <div class="col-md-6 my-3">
+                  <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                  <label for="username" class="lz-label">DOB</label>
+                </div>
+                <div class="col-md-6 my-3">
+                  <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                  <label for="username" class="lz-label">E-mail</label>
+                </div>
+                <div class="col-md-6 my-3">
+                  <div class="form-group">
+                    <input type="tel" class="form-control lz-input mobile_code" placeholder="Phone Number " maxlength="10" autocomplete="off" required>
+                    <label class="label-class phone_label lz-label" for="mobile_code"></label>
+                    </div>
+                </div>
+             
+              </div>
+              <div class="mt-4 text-sm-center">
+                  <button type="submit" class="btn main-button submit-btn">Submit</button>
+            </div>
+          </form>
         </div>
+      </div>
+      
         </div>
+      </div>
+      </div>
+      </div>
         
 
         <!--Thankyou Modal-->
@@ -832,7 +832,6 @@
                     <button type="submit" class="btn main-button submit-btn" data-dismiss="modal">Ok</button>
               </div>
                 </div>
-                
                   </div>
                 </div>
                 </div>
@@ -843,7 +842,7 @@
 <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/swiper/js/swiper-bundle.js"></script>
-<script src="https://intl-tel-input.com/node_modules/intl-tel-input/build/js/intlTelInput.js?1549804213570"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
 
 <!--Main JS File -->
 <script src="assets/js/main.js"></script>

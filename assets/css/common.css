@@ -464,7 +464,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 20px;
-  line-height: 20.32;
+  /* line-height: 20.32; */
   align-items: center;
 }
 .footer_section .footer_contact_details .location_div img{
@@ -516,6 +516,9 @@ footer {
 .footer_icons img {
   width: auto;
   max-height: 25px;
+}
+.location_div a {
+  color: #fff !important;
 }
 .section-wrapper {
   margin: 200px 0 100px 0;
@@ -570,12 +573,16 @@ display: -webkit-box;
     z-index: 1;
 }
 .hero .image-stack__item-top img{
-    width: auto;
+  width: 401px;
+  height: 354px;
+  object-fit: cover;
 }
 
 .hero .image-stack__item-bottom img {
-  width: 100%;
+  width: 401px;
   display: block;
+  height: 401px;
+  object-fit: cover;
 }
 .hero .hero-btn {
 margin-top: 26px;
@@ -690,6 +697,11 @@ position: relative;
       text-align: end; */
   /* margin-bottom: -65px; */
 }
+.application-card .aplication-img img {
+  height: 380px;
+  object-fit: cover;
+}
+
 
 .application-card .apply-btn {
 margin-top: 20px;
@@ -742,6 +754,11 @@ margin-left: -65px;
   padding: 30px 35px 47px 35px;
   text-align: center;
   border-radius: 20px;
+}
+.testimonials-section .client-profile img {
+  width: 173px;
+  object-fit: cover;
+  height: 173px;
 }
 .testimonials-section .client-profile .client_name {
   color: #24CCD4;
@@ -858,7 +875,7 @@ height: 52px;
   }
   
   .faq-section .mb-0 > a:after {
-    content: url(../images/Icons/Plus_Icon.png);
+    content: url(../images/icons/Plus_Icon.png);
     position: absolute;
     right: 0;
     top: 0;
@@ -866,7 +883,7 @@ height: 52px;
   }
   
   .faq-section .mb-0 > a[aria-expanded="true"]:after {
-    content: url(../images/Icons/Minus_Icon.png);
+    content: url(../images/icons/Minus_Icon.png);
     font-weight: 600;
   }
   .collapse-card {
@@ -985,7 +1002,8 @@ height: 52px;
     display: block;
     width: 100%;
     height: 45px;
-    padding: 0.5rem 0.75rem 0.2rem;
+    /* padding: 0.5rem 0.75rem 0.2rem; */
+    padding: 0.375rem 0.75rem;
     line-height: 1.5;
     color: #454545;
     background: #F2F2F2;
@@ -1145,7 +1163,7 @@ input[type='radio']:checked:before {
 
  /* Fitness Modal */
   .fitness-modal-head{
-    margin: 37px 147px 0px 200px;;
+    margin: 37px 147px 0px 150px;
     width: 100%;
 }
 .fitness-modal-wave{
@@ -1165,7 +1183,6 @@ input[type='radio']:checked:before {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; */
-
 }
 
 .iti {
@@ -1202,7 +1219,7 @@ input[type='radio']:checked:before {
   margin-left: 8px;
 }
 
-select {
+/* select {
   -webkit-appearance: none !important;
   -moz-appearance: window !important;
   background-image: url("../images/icons/down_arrow.png") !important;
@@ -1210,4 +1227,37 @@ select {
  background-position: right center !important;
  margin-right: 36px;
  cursor: pointer;
+} */
+/* select > button{
+  color: #7A5C8D;
+} */
+select[editable] > button 
+{ stroke: #7A5C8D !important; 
+  background-color: red;
+  align-items: center;
+}
+/* select.weight-select {
+  -webkit-appearance: none !important;
+  -moz-appearance: window !important;
+  color: #7A5C8D;
+} */
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent !important;
+}
+.phone_label {
+  margin-left: 62px;
+}
+.intl-tel-input,
+.iti{
+  width: 100%;
+}
+
+.weight-select {
+  width: 85px;
+  padding-right: 0px;
+}
+.kg-select {
+  width: 80px;
+  margin-left: 10px;
 }
