@@ -59,7 +59,7 @@
                 </a>
               </li>
               <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a href="#" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
+                <a href="#" id="registerbtn" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
               </li>
             </ul>
           </div>
@@ -119,7 +119,7 @@
               <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. Senectus nulla consectetur magna euismod. Nam sit sed id elementum orci in. Sit leo, viverra potenti at ultrices penatibus amet egestas nulla. Lacus adipiscing fermentum feugiat hendrerit id nisl molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. Senectus nulla consectetur magna euismod. Nam sit sed id elementum orci in. Sit leo, viverra potenti at ultrices penatibus amet egestas nulla. Lacus adipiscing fermentum feugiat hendrerit id nisl molestie.</p>
             </div>
             <div class="mt-4">
-                <a href="#" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
+                <a href="#" id="registerpersoneltrainingClass" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
             </div>
           </div>
       </div>
@@ -138,7 +138,7 @@
           <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. Senectus nulla consectetur magna euismod. Nam sit sed id elementum orci in. Sit leo, viverra potenti at ultrices penatibus amet egestas nulla. Lacus adipiscing fermentum feugiat hendrerit id nisl molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo.</p>
         </div>
         <div class="my-4">
-          <a href="#" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
+          <a href="#" id="registerconsistantClass" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
         </div>
         </div>
         <div class="col-md-6 grid-col order-1 order-md-2">
@@ -177,7 +177,7 @@
             <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. Senectus nulla consectetur magna euismod. Nam sit sed id elementum orci in. Sit leo, viverra potenti at ultrices penatibus amet egestas nulla. Lacus adipiscing fermentum feugiat hendrerit id nisl molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id amet mus tempor amet eget commodo, imperdiet. Senectus nulla consectetur magna euismod. Nam sit sed id elementum orci in. Sit leo, viverra potenti at ultrices penatibus amet egestas nulla. Lacus adipiscing fermentum feugiat hendrerit id nisl molestie.</p>
         </div>
         <div class="my-4">
-          <a href="#" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
+          <a href="#" id="registeronlineClass" class="btn main-button" data-toggle="modal" data-target="#registerModal">Register</a>
         </div>
           </div>
       </div>
@@ -381,7 +381,7 @@
           </div>
           <div class="location_div my-4">
               <img src="assets/images/icons/phone-call.png" class="img img-fluid" alt="" >
-              <a href="tel:+11 0987 6543 321" class="phone-link">+11 0987 6543 321</a>
+              <a href="tel:+1109876543321" class="phone-link">+11 0987 6543 321</a>
           </div>
           <div class="location_div my-4">
               <img src="assets/images/icons/Message_Icon.png" class="img img-fluid" alt="" >
@@ -407,7 +407,7 @@
   
 
 <!-- Modal -->
-<div class="modal register-modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+<div class="modal register-modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -415,7 +415,7 @@
           <div class="row form-row">
             <div class="col-md-6"></div>
             <div class="col-md-4 offset-2">
-              <select class="form-control class-select" onchange="showMe(this.value);">
+              <select class="form-control class-select" id="registerSelect" onchange="showMe(this.value);">
                 <option value="personal-training">Personal Training</option>
                 <option value="21-consistent">21 Consistent</option>
                 <option value="online-class">Online Classes</option>
@@ -461,26 +461,26 @@
                 <div class="row form-row">
                   <div class="col-md-6 my-3">
                     <div class="form-input-material">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">First Name</label>
+                    <input type="text" id="firstname" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="firstname" class="lz-label">First Name</label>
                   </div>
                 </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">Last Name</label>
+                    <input type="text" id="lastname" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="lastname" class="lz-label">Last Name</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">DOB</label>
+                    <input type="text" id="dob"  class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="dob" class="lz-label">DOB</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">E-mail</label>
+                    <input type="text" id="email" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="email" class="lz-label">E-mail</label>
                   </div>
                   <div class="col-md-6 my-3">
                     <div class="form-group">
-                      <input type="tel" class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
-                      <label class="phone_label label-class" for="mobile_code"></label>
+                      <input type="tel" id="phone"  class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
+                      <label for="phone" class="phone_label label-class" ></label>
                       </div>
                   </div>
                   <div class="col-md-6 my-3">
@@ -613,26 +613,26 @@
                 <div class="row form-row">
                   <div class="col-md-6 my-3">
                     <div class="form-input-material">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">First Name</label>
+                    <input type="text" id="firstnameone" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="firstnameone" class="lz-label">First Name</label>
                   </div>
                 </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">Last Name</label>
+                    <input type="text" id="lastnameone" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="lastnameone" class="lz-label">Last Name</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">DOB</label>
+                    <input type="text" id="dobone" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="dobone" class="lz-label">DOB</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">E-mail</label>
+                    <input type="text" id="emailone" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="emailone" class="lz-label">E-mail</label>
                   </div>
                   <div class="col-md-6 my-3">
                     <div class="form-group">
-                      <input type="tel" class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
-                      <label class="label-class phone_label lz-label" for="mobile_code"></label>
+                      <input type="tel" id="phoneone" class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
+                      <label form="phoneone" class="label-class phone_label lz-label" for="mobile_code"></label>
                       </div>
                   </div>
                  
@@ -678,26 +678,26 @@
                 <div class="row form-row">
                   <div class="col-md-6 my-3">
                     <div class="form-input-material">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">First Name</label>
+                    <input type="text" id="firstnametwo" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="firstnametwo" class="lz-label">First Name</label>
                   </div>
                 </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">Last Name</label>
+                    <input type="text" id="lastnametwo" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="lastnametwo" class="lz-label">Last Name</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">DOB</label>
+                    <input type="text" id="dobtwo" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="dobtwo" class="lz-label">DOB</label>
                   </div>
                   <div class="col-md-6 my-3">
-                    <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                    <label for="username" class="lz-label">E-mail</label>
+                    <input type="text" id="emailtwo" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                    <label for="emailtwo" class="lz-label">E-mail</label>
                   </div>
                   <div class="col-md-6 my-3">
                     <div class="form-group">
-                      <input type="tel" class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
-                      <label class="label-class phone_label lz-label" for="mobile_code"></label>
+                      <input type="tel" id="phonetwo" class="form-control lz-input mobile_code" placeholder="Phone Number" maxlength="10" autocomplete="off" required>
+                      <label for="phonetwo" class="label-class phone_label lz-label" for="mobile_code"></label>
                       </div>
                   </div>
                   <div class="col-md-12">
@@ -716,7 +716,7 @@
 
 
 <!--Fitness modal-->
-<div class="modal register-modal fade" id="fitnessmodal" tabindex="-1" role="dialog" aria-labelledby="fitnessModalLabel" aria-hidden="true">
+<div class="modal register-modal fade" id="fitnessmodal" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-dialog modal-xl" role="document">
   <div class="modal-content">
     <div class="modal-header">
@@ -732,7 +732,7 @@
       </button>
     </div>
     <div class="modal-body">
-      <div id="personal-training">
+      <div>
         <div class="personal-training-img">
           <div class="personal-wave-img">
             <div class="personal-image-top1">
@@ -759,26 +759,26 @@
               <div class="row form-row">
                 <div class="col-md-6 my-3">
                   <div class="form-input-material">
-                  <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                  <label for="username" class="lz-label">First Name</label>
+                  <input type="text" id="firstnamethree" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                  <label for="firstnamethree" class="lz-label">First Name</label>
                 </div>
               </div>
                 <div class="col-md-6 my-3">
-                  <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                  <label for="username" class="lz-label">Last Name</label>
+                  <input type="text" id="lastnamethree" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                  <label for="lastnamethree" class="lz-label">Last Name</label>
                 </div>
                 <div class="col-md-6 my-3">
-                  <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                  <label for="username" class="lz-label">DOB</label>
+                  <input type="text" id="dobthree" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                  <label for="dobthree" class="lz-label">DOB</label>
                 </div>
                 <div class="col-md-6 my-3">
-                  <input type="text" class="form-control lz-input" placeholder=" " autocomplete="off" required>
-                  <label for="username" class="lz-label">E-mail</label>
+                  <input type="text" id="emailthree" class="form-control lz-input" placeholder=" " autocomplete="off" required>
+                  <label for="emailthree" class="lz-label">E-mail</label>
                 </div>
                 <div class="col-md-6 my-3">
                   <div class="form-group">
-                    <input type="tel" class="form-control lz-input mobile_code" placeholder="Phone Number " maxlength="10" autocomplete="off" required>
-                    <label class="label-class phone_label lz-label" for="mobile_code"></label>
+                    <input type="tel" id="phonethree" class="form-control lz-input mobile_code" placeholder="Phone Number " maxlength="10" autocomplete="off" required>
+                    <label form="phonethree" class="label-class phone_label lz-label" for="mobile_code"></label>
                     </div>
                 </div>
              
@@ -807,7 +807,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <div id="personal-training">
+                <div>
                   <div class="personal-training-img">
                     <div class="personal-image-bottom">
                       <img src="./assets/images/classes/modal-wave.png" class="img img-fluid modal-wave sucess-wave" alt="">
@@ -820,7 +820,7 @@
                   </div>
                   <div class="register-modal-body success-modal-body">
                     <div class="text-center">
-                      <img src="./assets/images/classes/success.png" class="img img-fluid">
+                      <img src="./assets/images/classes/success.png" class="img img-fluid" alt="success-img">
                       <div class="home-about-text mt-3">
                         <h2>Form has been submitted successfully!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, accumsan, est, maecenas varius quisque libero ultricies. Ultrices dolor, urna semper lectus risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, accumsan, est, maecenas varius quisque libero ultricies. Ultrices dolor, urna semper lectus risus.</p>
@@ -846,5 +846,6 @@
 
 <!--Main JS File -->
 <script src="assets/js/main.js"></script>
+
 </body>
 </html>

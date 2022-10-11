@@ -473,6 +473,12 @@
   .modal-description {
     width: 100%;
 }
+
+.testimonials-section .client-profile img {
+    width: 173px;
+    object-fit: cover;
+    height: 173px;
+}
     }
     /*--------------------------------------------------------------
     # tab view starts
@@ -573,8 +579,11 @@
     max-width: 720px;
 
 }
-
-
+.testimonials-section .client-profile img {
+    width: 173px;
+    object-fit: cover;
+    height: 173px;
+}
     }
 
     /*--------------------------------------------------------------
@@ -666,6 +675,11 @@
         justify-content: end;
         padding-top: 13px;
         position: relative;
+    }
+    .testimonials-section .client-profile img {
+        width: 173px;
+        object-fit: cover;
+        height: 173px;
     }
 
 }
